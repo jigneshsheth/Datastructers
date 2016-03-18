@@ -49,6 +49,19 @@ class DataStructureTests: XCTestCase {
     XCTAssertEqual(factorial(5), 120)
   }
   
+  func testPrime(){
+    XCTAssert(!isPrime(0))
+    XCTAssert(!isPrime(1))
+    XCTAssert(!isPrime(2))
+    XCTAssert(isPrime(3))
+    XCTAssert(!isPrime(4))
+    XCTAssert(isPrime(5))
+    XCTAssert(isPrime(7))
+    XCTAssert(isPrime(11))
+    XCTAssert(isPrime(13))
+    printPrimeNumbers(100)
+  }
+  
   func testPerformanceExample() {
     // This is an example of a performance test case.
     self.measureBlock {

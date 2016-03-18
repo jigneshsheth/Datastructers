@@ -12,6 +12,7 @@
 		D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E798B1C99C3250055C862 /* DataStructureTests.swift */; };
 		D00E79971C99C34E0055C862 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E79961C99C34E0055C862 /* Anagram.swift */; };
 		D00E79991C99C57B0055C862 /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E79981C99C57B0055C862 /* Factorial.swift */; };
+		D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		D00E798D1C99C3250055C862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D00E79961C99C34E0055C862 /* Anagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anagram.swift; sourceTree = "<group>"; };
 		D00E79981C99C57B0055C862 /* Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
+		D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				D00E79811C99C3250055C862 /* Info.plist */,
 				D00E79961C99C34E0055C862 /* Anagram.swift */,
 				D00E79981C99C57B0055C862 /* Factorial.swift */,
+				D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */,
 				D00E79971C99C34E0055C862 /* Anagram.swift in Sources */,
 				D00E79991C99C57B0055C862 /* Factorial.swift in Sources */,
 			);
@@ -387,6 +391,7 @@
 				D00E79921C99C3250055C862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00E79931C99C3250055C862 /* Build configuration list for PBXNativeTarget "DataStructureTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +400,7 @@
 				D00E79951C99C3250055C862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
