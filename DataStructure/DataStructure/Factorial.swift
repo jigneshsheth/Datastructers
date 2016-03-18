@@ -8,7 +8,13 @@
 
 import Foundation
 
-
+/**
+ Functions gives the factorial of given number
+ 
+ - parameter number:
+ 
+ - returns: int factorial for given number.
+ */
 public func factorial(number:Int) -> Int{
   return number < 1 ? 0 : (1...number).reduce(1, combine: *)
 }
