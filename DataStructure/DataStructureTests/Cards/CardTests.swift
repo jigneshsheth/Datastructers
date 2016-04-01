@@ -22,7 +22,7 @@ class CardTests: XCTestCase {
     }
     
     func testExample() {
-      
+      // Convert Range into Array
       let input = (1...100).map{$0}
       print("Input \(input)")
       let final = Card.shuffle(input)
