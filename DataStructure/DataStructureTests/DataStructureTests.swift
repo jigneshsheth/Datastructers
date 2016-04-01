@@ -19,6 +19,31 @@ class DataStructureTests: XCTestCase {
     super.tearDown()
   }
   
+  
+  func testReverseString(){
+    XCTAssertEqual(reverseString("123"), "321")
+  }
+  
+  func testReverseNumber(){
+    var input = 1234
+    reverseNumber(&input)
+    XCTAssertEqual(input,4321)
+    input = 56880
+    reverseNumber(&input)
+    XCTAssertEqual(input,08865)
+    
+    input = 0987654432
+    reverseNumber(&input)
+    XCTAssertEqual(input,234456789)
+  }
+  
+  func testReverseNumber1(){
+    XCTAssertEqual(reverseNum(1234),4321)
+    XCTAssertEqual(reverseNum(123456789),987654321)
+    XCTAssertEqual(reverseNum(123400),004321)
+  }
+  
+  
   func testAnagram() {
     XCTAssert(isAnagram(str1:"Mother In Law",str2: "Hitler Woman"))
     
@@ -62,11 +87,23 @@ class DataStructureTests: XCTestCase {
     printPrimeNumbers(100)
   }
   
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measureBlock {
-      // Put the code you want to measure the time of here.
-    }
+  func testPowerOfTwo() {
+    XCTAssertTrue(isPowerOfTwo(10))
   }
+  
+  func testBinaryPresentation(){
+    printBinary(64)
+  }
+  
+  func testPairOfTwo() {
+    let input = [2,3,5,5,6,4,9,8,9,2,1,7,11]
+    let result = pairOfTwoNumber(input, sum: 10)
+    print("results:: \(result)")
+    XCTAssertTrue(result.count == 6)
+  }
+  
+  
+  
+  
   
 }
