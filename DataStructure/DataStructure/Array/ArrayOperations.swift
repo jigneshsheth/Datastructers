@@ -130,8 +130,19 @@ extension ArrayOperations {
     for i in 1..<arr.count {
       for j in 0..<i {
         if arr[j] > arr[i] {
-          exchange(&arr, index1: j, Index2: i)
+          let temp = arr[j]
+          arr[j] = arr[i]
+          
+          var tempIndex = i
+          //Interesting swap
+          for k in i.stride(to: j, by: -1){
+            arr[k] = arr[k-1]
+            tempIndex = k
+          }
+          arr[tempIndex] = temp
         }
+//        print("Iteration: \(j)")
+//        display()
       }
       print("Iteration: \(i)")
       display()
