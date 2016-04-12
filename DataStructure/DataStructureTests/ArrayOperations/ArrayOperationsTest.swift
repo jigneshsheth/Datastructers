@@ -109,6 +109,11 @@ class ArrayOperationsTest: XCTestCase {
   }
   
   
+  func testInsertionSort(){
+    let array = ArrayOperations(input: [25,17,31,13,2])
+    array.insertionSort()
+    XCTAssertEqual([2, 13, 17, 25, 31], array.arrayOutput, "BubleSort failed \(#function)")
+  }
   
   
 }

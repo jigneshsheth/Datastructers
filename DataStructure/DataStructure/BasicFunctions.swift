@@ -8,6 +8,17 @@
 
 import Foundation
 
+
+// MARK: Generic Functions 
+
+public func exchange<T>(inout data:[T],index1:Int,Index2:Int) {
+  let temp = data[index1]
+  data[index1] = data[Index2]
+  data[Index2] = temp
+}
+
+
+/// MARK : Logger Functions
 func logFunctionTitle(name:String = #function) {
   print("=========================================")
   print("********  \(name)  ********")
@@ -21,6 +32,8 @@ func logFunctionEnd(name:String = #function) {
 }
 
 
+
+// MARK: Arithmentic functions
 func isPrime(number:Int) -> Bool {
   
   if number % 2 == 0 || number == 1 {

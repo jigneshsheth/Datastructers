@@ -95,9 +95,7 @@ extension ArrayOperations {
       for j in (i+1)..<arr.count {
         // We selected arr[i] as first selected value
         if arr[i] > arr[j] {
-          let temp = arr[i]
-          arr[i] = arr[j]
-          arr[j] = temp
+          exchange(&arr, index1: i, Index2: j)
         }
       }
       print("Iteration: \(i)")
@@ -115,9 +113,24 @@ extension ArrayOperations {
     for i in 0..<arr.count {
       for j in 0..<arr.count-i-1 {
         if arr[j] > arr[j+1] {
-          let temp = arr[j]
-          arr[j] = arr[j+1]
-          arr[j+1] = temp
+          exchange(&arr, index1: j, Index2: j+1)
+        }
+      }
+      print("Iteration: \(i)")
+      display()
+    }
+    
+    logFunctionEnd()
+  }
+  
+  //every iteration you will get smallest number at the begining and start arranging the asending array
+  public func insertionSort(){
+    logFunctionTitle()
+    
+    for i in 1..<arr.count {
+      for j in 0..<i {
+        if arr[j] > arr[i] {
+          exchange(&arr, index1: j, Index2: i)
         }
       }
       print("Iteration: \(i)")
