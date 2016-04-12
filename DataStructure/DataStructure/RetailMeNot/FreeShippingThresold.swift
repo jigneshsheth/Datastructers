@@ -62,3 +62,33 @@ public func calculateFreeShipping(productPrices:[Int],freeShippingAmt:Int) -> (I
   }
   return result
 }
+
+
+public func calculateFreeShippingOptimal(productPrices:[Int],freeShippingAmt:Int) -> (Int,Int) {
+  
+  var minFreeShippingDelta = freeShippingAmt
+  
+  var index1 = 0
+  var index2 = productPrices.count - 1
+  var result:(Int,Int) = (-1,-1)
+  // Below statement do O(log n)
+  let _productPrices = productPrices.sort()
+  
+  // Below statement do O(n) so total complexity of the method is O(n log n)
+  while index1 < index2 {
+    let price1 = _productPrices[index1]
+    let price2 = _productPrices[index2]
+    let delta = price1 + price2 - freeShippingAmt
+    if delta > 0 && delta < minFreeShippingDelta {
+      minFreeShippingDelta = delta
+      result = (price1,price2)
+    }
+    if delta < 0 {
+      index1 += 1
+    }else {
+      index2 -= 1
+    }
+  }
+  return result
+}
+

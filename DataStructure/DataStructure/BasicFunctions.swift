@@ -8,6 +8,18 @@
 
 import Foundation
 
+func logFunctionTitle(name:String = #function) {
+  print("=========================================")
+  print("********  \(name)  ********")
+  print("=========================================")
+}
+
+func logFunctionEnd(name:String = #function) {
+  print("=========================================")
+  print("******** End \(name)  ********")
+  print("=========================================")
+}
+
 
 func isPrime(number:Int) -> Bool {
   
@@ -15,7 +27,13 @@ func isPrime(number:Int) -> Bool {
     return false
   }
   
-  for var i = 3; i * i <= number; i += 2 {
+  //  for var i = 3; i * i <= number; i += 2 {
+  //    if number % i == 0 {
+  //      return false
+  //    }
+  //  }
+  
+  for i in 3.stride(to: number, by: 2){
     if number % i == 0 {
       return false
     }
@@ -99,15 +117,15 @@ func printBinary(num:Int) -> String {
 func pairOfTwoNumber(numbers:[Int],sum:Int) -> [(Int,Int)] {
   
   var results:[(Int,Int)] = []
-//  for i in 0..<numbers.count {
-//    for j in (i+1)..<numbers.count {
-//      let num1 = numbers[i]
-//      let num2 = numbers[j]
-//      if (num1 + num2) == sum {
-//        results.append((num1,num2))
-//      }
-//    }
-//  }
+  //  for i in 0..<numbers.count {
+  //    for j in (i+1)..<numbers.count {
+  //      let num1 = numbers[i]
+  //      let num2 = numbers[j]
+  //      if (num1 + num2) == sum {
+  //        results.append((num1,num2))
+  //      }
+  //    }
+  //  }
   //[2,3,5,5,6,4,9,8,9,2,1,7]
   var inputDictionary = [Bool](count: 10000, repeatedValue: false)
   
