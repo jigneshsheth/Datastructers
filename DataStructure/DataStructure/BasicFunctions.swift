@@ -97,14 +97,18 @@ func reverseNum( number:Int) -> Int {
 }
 
 /**
- check if the given integr number is Power of two
- 
+ check if the given integr number is Power of two ex. 2^1 = 2 ,2^2 = 4 , 2^3 = 8, 16,32,64,128,256,512,1024,2048,....
+  2's binary = 10 and 1's binary value = 01,  so 10 & 01 = 0  same for 
+   4's binary = 100 and 3's binary value = 011 so 100 & 011 = 0
  - parameter input:
  
  - returns: true if the given number is power of 2
  */
 func isPowerOfTwo(input:Int) -> Bool {
-  return (input > 0) && ((input & (input - 1)) == 0)
+  printBinary(input)
+  let num = input & (input - 1)
+  printBinary(num)
+  return (input > 0) && (num == 0)
 }
 
 /**

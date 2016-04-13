@@ -87,8 +87,17 @@ class DataStructureTests: XCTestCase {
     printPrimeNumbers(100)
   }
   
+  
   func testPowerOfTwo() {
-    XCTAssertTrue(isPowerOfTwo(10))
+    XCTAssertFalse(isPowerOfTwo(10))
+    XCTAssertTrue(isPowerOfTwo(2))
+    XCTAssertTrue(isPowerOfTwo(4))
+    XCTAssertTrue(isPowerOfTwo(8))
+    XCTAssertTrue(isPowerOfTwo(16))
+    XCTAssertTrue(isPowerOfTwo(32))
+    XCTAssertFalse(isPowerOfTwo(11))
+    XCTAssertFalse(isPowerOfTwo(20))
+    XCTAssertFalse(isPowerOfTwo(13))
   }
   
   func testBinaryPresentation(){
