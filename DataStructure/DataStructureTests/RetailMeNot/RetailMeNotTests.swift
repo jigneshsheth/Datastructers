@@ -38,4 +38,9 @@ class RetailMeNotTests: XCTestCase {
   //        }
   //    }
   
+  
+  func testPrintFizzBuzz(){
+    printFizzBuzz(100)
+  }
+  
 }

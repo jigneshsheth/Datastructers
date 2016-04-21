@@ -155,6 +155,7 @@ func pairOfTwoNumber(numbers:[Int],sum:Int) -> [(Int,Int)] {
     inputDictionary[num] = true
     
   }
+  
   return results
 }
 

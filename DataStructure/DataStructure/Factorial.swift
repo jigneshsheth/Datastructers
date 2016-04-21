@@ -18,3 +18,11 @@ import Foundation
 public func factorial(number:Int) -> Int{
   return number < 1 ? 0 : (1...number).reduce(1, combine: *)
 }
+
+
+public func dynamicFactorial(number:Int) {
+  
+  
+  
+  
+}
