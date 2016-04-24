@@ -23,12 +23,14 @@ public func dynamicFibonacci(num:Int) -> [Int] {
 }
 
 private func fib(num:Int,inout dict:[Int]) -> Int {
-
+//  print("Dictionary:: \(dict)")
   if dict[num] != 0 {
+//    print("Found \(num)")
     return dict[num]
   }else {
     let result = num < 2 ? 1 : fib(num - 2, dict: &dict) + fib(num - 1, dict: &dict)
     dict[num] = result
+//    print("New Entry \(num)")
     return result
   }
 }

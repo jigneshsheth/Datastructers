@@ -24,6 +24,7 @@
 		D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */; };
 		D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */; };
 		D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1621CC878CD00DA2D76 /* Utils.swift */; };
+		D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1651CC8E9A300DA2D76 /* LRUCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNBasicFunctions.swift; path = RetailMeNot/RMNBasicFunctions.swift; sourceTree = "<group>"; };
 		D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		D0FEE1621CC878CD00DA2D76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		D0FEE1651CC8E9A300DA2D76 /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LRUCache.swift; path = LinkedList/LRUCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		D00E797E1C99C3250055C862 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				D0FEE1641CC8E98700DA2D76 /* LinkedList */,
 				D0FEE1611CC878B700DA2D76 /* Utils */,
 				D00FDAA11CBCAA97008E128C /* Array */,
 				D04BABE01CAC12520085EB59 /*  RetailMeNot */,
@@ -174,6 +177,14 @@
 				D0FEE1621CC878CD00DA2D76 /* Utils.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		D0FEE1641CC8E98700DA2D76 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				D0FEE1651CC8E9A300DA2D76 /* LRUCache.swift */,
+			);
+			name = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */,
 				D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */,
 				D04BABE21CAC12790085EB59 /* FreeShippingThresold.swift in Sources */,
 				D0D598481CA04AC400FB71FA /* BinarySearchTree.swift in Sources */,

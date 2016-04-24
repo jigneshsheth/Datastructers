@@ -127,8 +127,13 @@ class DataStructureTests: XCTestCase {
     XCTAssertEqual(55, fibonacci(9))
     
 //    stopWatch.stopClock()
-    
-    
+  }
+  
+  
+  func testDynamicFactorial(){
+    for i in 0...10 {
+      print("  Factorial : \(i)  \(dynamicFactorial(i))")
+    }
   }
   
   
