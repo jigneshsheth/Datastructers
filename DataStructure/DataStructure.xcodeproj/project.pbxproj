@@ -23,6 +23,9 @@
 		D0E65F771CCDCEA500913D9E /* StringProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F761CCDCEA500913D9E /* StringProblems.swift */; };
 		D0E65F791CCDCEC900913D9E /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F781CCDCEC900913D9E /* Anagram.swift */; };
 		D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F7B1CCDD21F00913D9E /* StringTests.swift */; };
+		D0E65F7F1CCDD6BC00913D9E /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F7E1CCDD6BC00913D9E /* TicTacToe.swift */; };
+		D0E65F821CCDDE4300913D9E /* TicTacToeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F811CCDDE4300913D9E /* TicTacToeTest.swift */; };
+		D0E65F841CCDDED000913D9E /* ReflectedStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F831CCDDED000913D9E /* ReflectedStringConvertible.swift */; };
 		D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */; };
 		D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */; };
 		D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1621CC878CD00DA2D76 /* Utils.swift */; };
@@ -59,6 +62,9 @@
 		D0E65F761CCDCEA500913D9E /* StringProblems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProblems.swift; sourceTree = "<group>"; };
 		D0E65F781CCDCEC900913D9E /* Anagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Anagram.swift; path = String/Anagram.swift; sourceTree = "<group>"; };
 		D0E65F7B1CCDD21F00913D9E /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTests.swift; path = Strings/StringTests.swift; sourceTree = "<group>"; };
+		D0E65F7E1CCDD6BC00913D9E /* TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TicTacToe.swift; path = TicTacToe/TicTacToe.swift; sourceTree = "<group>"; };
+		D0E65F811CCDDE4300913D9E /* TicTacToeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TicTacToeTest.swift; path = TicTacToe/TicTacToeTest.swift; sourceTree = "<group>"; };
+		D0E65F831CCDDED000913D9E /* ReflectedStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReflectedStringConvertible.swift; path = Utils/ReflectedStringConvertible.swift; sourceTree = "<group>"; };
 		D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNBasicFunctions.swift; path = RetailMeNot/RMNBasicFunctions.swift; sourceTree = "<group>"; };
 		D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		D0FEE1621CC878CD00DA2D76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 		D00E797E1C99C3250055C862 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				D0E65F7D1CCDD6A100913D9E /* TicTacToe */,
 				D0E65F751CCDCE9200913D9E /* String */,
 				D0FEE1641CC8E98700DA2D76 /* LinkedList */,
 				D0FEE1611CC878B700DA2D76 /* Utils */,
@@ -125,6 +132,7 @@
 		D00E798A1C99C3250055C862 /* DataStructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				D0E65F801CCDDE2B00913D9E /* TicTacToe */,
 				D0E65F7A1CCDD20500913D9E /* Strings */,
 				D00E798B1C99C3250055C862 /* DataStructureTests.swift */,
 				D00E798D1C99C3250055C862 /* Info.plist */,
@@ -193,10 +201,27 @@
 			name = Strings;
 			sourceTree = "<group>";
 		};
+		D0E65F7D1CCDD6A100913D9E /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				D0E65F7E1CCDD6BC00913D9E /* TicTacToe.swift */,
+			);
+			name = TicTacToe;
+			sourceTree = "<group>";
+		};
+		D0E65F801CCDDE2B00913D9E /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				D0E65F811CCDDE4300913D9E /* TicTacToeTest.swift */,
+			);
+			name = TicTacToe;
+			sourceTree = "<group>";
+		};
 		D0FEE1611CC878B700DA2D76 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				D0FEE1621CC878CD00DA2D76 /* Utils.swift */,
+				D0E65F831CCDDED000913D9E /* ReflectedStringConvertible.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -323,12 +348,14 @@
 				D0D598481CA04AC400FB71FA /* BinarySearchTree.swift in Sources */,
 				D0D393751CAC3DD30087497E /* IntExtension.swift in Sources */,
 				D00FDAA31CBCAAB7008E128C /* ArrayOperations.swift in Sources */,
+				D0E65F7F1CCDD6BC00913D9E /* TicTacToe.swift in Sources */,
 				D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */,
 				D0E65F791CCDCEC900913D9E /* Anagram.swift in Sources */,
 				D0E65F771CCDCEA500913D9E /* StringProblems.swift in Sources */,
 				D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */,
 				D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */,
 				D09BDA991CA0CC9D003C441B /* Card.swift in Sources */,
+				D0E65F841CCDDED000913D9E /* ReflectedStringConvertible.swift in Sources */,
 				D00E79991C99C57B0055C862 /* Factorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E65F821CCDDE4300913D9E /* TicTacToeTest.swift in Sources */,
 				D04BABE41CAC14110085EB59 /* RetailMeNotTests.swift in Sources */,
 				D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */,
 				D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */,
