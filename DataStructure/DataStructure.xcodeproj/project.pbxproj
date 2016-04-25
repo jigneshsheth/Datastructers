@@ -10,7 +10,6 @@
 		D00E79801C99C3250055C862 /* DataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = D00E797F1C99C3250055C862 /* DataStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00E79871C99C3250055C862 /* DataStructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E797C1C99C3250055C862 /* DataStructure.framework */; };
 		D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E798B1C99C3250055C862 /* DataStructureTests.swift */; };
-		D00E79971C99C34E0055C862 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E79961C99C34E0055C862 /* Anagram.swift */; };
 		D00E79991C99C57B0055C862 /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E79981C99C57B0055C862 /* Factorial.swift */; };
 		D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */; };
 		D00FDAA31CBCAAB7008E128C /* ArrayOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FDAA21CBCAAB7008E128C /* ArrayOperations.swift */; };
@@ -21,6 +20,9 @@
 		D09BDA9B1CA1999B003C441B /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BDA9A1CA1999B003C441B /* CardTests.swift */; };
 		D0D393751CAC3DD30087497E /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D393741CAC3DD30087497E /* IntExtension.swift */; };
 		D0D598481CA04AC400FB71FA /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D598471CA04AC400FB71FA /* BinarySearchTree.swift */; };
+		D0E65F771CCDCEA500913D9E /* StringProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F761CCDCEA500913D9E /* StringProblems.swift */; };
+		D0E65F791CCDCEC900913D9E /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F781CCDCEC900913D9E /* Anagram.swift */; };
+		D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F7B1CCDD21F00913D9E /* StringTests.swift */; };
 		D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */; };
 		D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */; };
 		D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1621CC878CD00DA2D76 /* Utils.swift */; };
@@ -44,7 +46,6 @@
 		D00E79861C99C3250055C862 /* DataStructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E798B1C99C3250055C862 /* DataStructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructureTests.swift; sourceTree = "<group>"; };
 		D00E798D1C99C3250055C862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D00E79961C99C34E0055C862 /* Anagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Anagram.swift; sourceTree = "<group>"; };
 		D00E79981C99C57B0055C862 /* Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicFunctions.swift; sourceTree = "<group>"; };
 		D00FDAA21CBCAAB7008E128C /* ArrayOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayOperations.swift; path = Array/ArrayOperations.swift; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		D09BDA9A1CA1999B003C441B /* CardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardTests.swift; path = Cards/CardTests.swift; sourceTree = "<group>"; };
 		D0D393741CAC3DD30087497E /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Extension/IntExtension.swift; sourceTree = "<group>"; };
 		D0D598471CA04AC400FB71FA /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BinarySearchTree.swift; path = Tree/BinarySearchTree.swift; sourceTree = "<group>"; };
+		D0E65F761CCDCEA500913D9E /* StringProblems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProblems.swift; sourceTree = "<group>"; };
+		D0E65F781CCDCEC900913D9E /* Anagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Anagram.swift; path = String/Anagram.swift; sourceTree = "<group>"; };
+		D0E65F7B1CCDD21F00913D9E /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTests.swift; path = Strings/StringTests.swift; sourceTree = "<group>"; };
 		D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNBasicFunctions.swift; path = RetailMeNot/RMNBasicFunctions.swift; sourceTree = "<group>"; };
 		D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		D0FEE1621CC878CD00DA2D76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		D00E797E1C99C3250055C862 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				D0E65F751CCDCE9200913D9E /* String */,
 				D0FEE1641CC8E98700DA2D76 /* LinkedList */,
 				D0FEE1611CC878B700DA2D76 /* Utils */,
 				D00FDAA11CBCAA97008E128C /* Array */,
@@ -108,7 +113,6 @@
 				D09BDA971CA0CC86003C441B /* Cards */,
 				D00E797F1C99C3250055C862 /* DataStructure.h */,
 				D00E79811C99C3250055C862 /* Info.plist */,
-				D00E79961C99C34E0055C862 /* Anagram.swift */,
 				D00E79981C99C57B0055C862 /* Factorial.swift */,
 				D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */,
 				D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */,
@@ -121,6 +125,7 @@
 		D00E798A1C99C3250055C862 /* DataStructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				D0E65F7A1CCDD20500913D9E /* Strings */,
 				D00E798B1C99C3250055C862 /* DataStructureTests.swift */,
 				D00E798D1C99C3250055C862 /* Info.plist */,
 				D09BDA9A1CA1999B003C441B /* CardTests.swift */,
@@ -169,6 +174,23 @@
 				D0D598471CA04AC400FB71FA /* BinarySearchTree.swift */,
 			);
 			name = Tree;
+			sourceTree = "<group>";
+		};
+		D0E65F751CCDCE9200913D9E /* String */ = {
+			isa = PBXGroup;
+			children = (
+				D0E65F781CCDCEC900913D9E /* Anagram.swift */,
+				D0E65F761CCDCEA500913D9E /* StringProblems.swift */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		D0E65F7A1CCDD20500913D9E /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				D0E65F7B1CCDD21F00913D9E /* StringTests.swift */,
+			);
+			name = Strings;
 			sourceTree = "<group>";
 		};
 		D0FEE1611CC878B700DA2D76 /* Utils */ = {
@@ -302,10 +324,11 @@
 				D0D393751CAC3DD30087497E /* IntExtension.swift in Sources */,
 				D00FDAA31CBCAAB7008E128C /* ArrayOperations.swift in Sources */,
 				D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */,
+				D0E65F791CCDCEC900913D9E /* Anagram.swift in Sources */,
+				D0E65F771CCDCEA500913D9E /* StringProblems.swift in Sources */,
 				D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */,
 				D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */,
 				D09BDA991CA0CC9D003C441B /* Card.swift in Sources */,
-				D00E79971C99C34E0055C862 /* Anagram.swift in Sources */,
 				D00E79991C99C57B0055C862 /* Factorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04BABE41CAC14110085EB59 /* RetailMeNotTests.swift in Sources */,
+				D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */,
 				D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */,
 				D09BDA9B1CA1999B003C441B /* CardTests.swift in Sources */,
 				D00FDAA51CBCB149008E128C /* ArrayOperationsTest.swift in Sources */,
