@@ -131,9 +131,12 @@ class DataStructureTests: XCTestCase {
   
   
   func testDynamicFactorial(){
+    let expectedResult = [1,1,2,6,24,120,720,5040,40320,362880,3628800]
+    var result:[Int] = []
     for i in 0...10 {
-      print("  Factorial : \(i)  \(dynamicFactorial(i))")
+      result.append(dynamicFactorial(i))
     }
+    XCTAssertEqual(expectedResult,result)
   }
   
   
