@@ -54,4 +54,9 @@ class StringTests: XCTestCase {
   }
   
   
+  
+  func testReverseWord() {
+    XCTAssertEqual("busy is Jignesh",reverseWords("Jignesh is busy"))
+  }
+  
 }

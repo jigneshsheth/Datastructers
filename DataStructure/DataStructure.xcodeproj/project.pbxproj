@@ -29,6 +29,7 @@
 		D0E65F871CCDF12000913D9E /* BitWiseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F861CCDF12000913D9E /* BitWiseOperations.swift */; };
 		D0E65F8A1CCDF22D00913D9E /* BitWiseOperationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F891CCDF22D00913D9E /* BitWiseOperationsTest.swift */; };
 		D0E65F8C1CCDF74700913D9E /* NumberToWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F8B1CCDF74700913D9E /* NumberToWords.swift */; };
+		D0E65F8E1CCF292300913D9E /* ReverseTheWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F8D1CCF292300913D9E /* ReverseTheWord.swift */; };
 		D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */; };
 		D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */; };
 		D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1621CC878CD00DA2D76 /* Utils.swift */; };
@@ -71,6 +72,7 @@
 		D0E65F861CCDF12000913D9E /* BitWiseOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitWiseOperations.swift; sourceTree = "<group>"; };
 		D0E65F891CCDF22D00913D9E /* BitWiseOperationsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BitWiseOperationsTest.swift; path = BitWise/BitWiseOperationsTest.swift; sourceTree = "<group>"; };
 		D0E65F8B1CCDF74700913D9E /* NumberToWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberToWords.swift; path = String/NumberToWords.swift; sourceTree = "<group>"; };
+		D0E65F8D1CCF292300913D9E /* ReverseTheWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverseTheWord.swift; path = String/ReverseTheWord.swift; sourceTree = "<group>"; };
 		D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNBasicFunctions.swift; path = RetailMeNot/RMNBasicFunctions.swift; sourceTree = "<group>"; };
 		D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		D0FEE1621CC878CD00DA2D76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				D0E65F781CCDCEC900913D9E /* Anagram.swift */,
 				D0E65F761CCDCEA500913D9E /* StringProblems.swift */,
 				D0E65F8B1CCDF74700913D9E /* NumberToWords.swift */,
+				D0E65F8D1CCF292300913D9E /* ReverseTheWord.swift */,
 			);
 			name = String;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				D0D598481CA04AC400FB71FA /* BinarySearchTree.swift in Sources */,
 				D0D393751CAC3DD30087497E /* IntExtension.swift in Sources */,
 				D00FDAA31CBCAAB7008E128C /* ArrayOperations.swift in Sources */,
+				D0E65F8E1CCF292300913D9E /* ReverseTheWord.swift in Sources */,
 				D0E65F7F1CCDD6BC00913D9E /* TicTacToe.swift in Sources */,
 				D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */,
 				D0E65F791CCDCEC900913D9E /* Anagram.swift in Sources */,
