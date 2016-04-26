@@ -39,4 +39,19 @@ class StringTests: XCTestCase {
     }
   }
   
+  
+  func testNumberToWords(){
+    XCTAssertEqual("OneHundredThirtyThree",NumberToWords.numberToWords(123))
+  }
+  
+  func testCountCharInString(){
+    XCTAssertEqual(0,countCharactersInString("ABC", char: "D"))
+    XCTAssertEqual(1,countCharactersInString("ABC", char: "A"))
+    XCTAssertEqual(5,countCharactersInString("ABCAAAA", char: "A"))
+    XCTAssertEqual(0,countCharactersInString("ABC", char: "a"))
+    XCTAssertEqual(2,countCharactersInString("aaABC", char: "a"))
+    XCTAssertEqual(1,countCharactersInString("ABCa", char: "A"))
+  }
+  
+  
 }

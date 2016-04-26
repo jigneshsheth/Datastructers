@@ -28,6 +28,7 @@
 		D0E65F841CCDDED000913D9E /* ReflectedStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F831CCDDED000913D9E /* ReflectedStringConvertible.swift */; };
 		D0E65F871CCDF12000913D9E /* BitWiseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F861CCDF12000913D9E /* BitWiseOperations.swift */; };
 		D0E65F8A1CCDF22D00913D9E /* BitWiseOperationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F891CCDF22D00913D9E /* BitWiseOperationsTest.swift */; };
+		D0E65F8C1CCDF74700913D9E /* NumberToWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F8B1CCDF74700913D9E /* NumberToWords.swift */; };
 		D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */; };
 		D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */; };
 		D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1621CC878CD00DA2D76 /* Utils.swift */; };
@@ -69,6 +70,7 @@
 		D0E65F831CCDDED000913D9E /* ReflectedStringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReflectedStringConvertible.swift; path = Utils/ReflectedStringConvertible.swift; sourceTree = "<group>"; };
 		D0E65F861CCDF12000913D9E /* BitWiseOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitWiseOperations.swift; sourceTree = "<group>"; };
 		D0E65F891CCDF22D00913D9E /* BitWiseOperationsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BitWiseOperationsTest.swift; path = BitWise/BitWiseOperationsTest.swift; sourceTree = "<group>"; };
+		D0E65F8B1CCDF74700913D9E /* NumberToWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberToWords.swift; path = String/NumberToWords.swift; sourceTree = "<group>"; };
 		D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNBasicFunctions.swift; path = RetailMeNot/RMNBasicFunctions.swift; sourceTree = "<group>"; };
 		D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		D0FEE1621CC878CD00DA2D76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			children = (
 				D0E65F781CCDCEC900913D9E /* Anagram.swift */,
 				D0E65F761CCDCEA500913D9E /* StringProblems.swift */,
+				D0E65F8B1CCDF74700913D9E /* NumberToWords.swift */,
 			);
 			name = String;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				D0E65F771CCDCEA500913D9E /* StringProblems.swift in Sources */,
 				D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */,
 				D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */,
+				D0E65F8C1CCDF74700913D9E /* NumberToWords.swift in Sources */,
 				D09BDA991CA0CC9D003C441B /* Card.swift in Sources */,
 				D0E65F871CCDF12000913D9E /* BitWiseOperations.swift in Sources */,
 				D0E65F841CCDDED000913D9E /* ReflectedStringConvertible.swift in Sources */,

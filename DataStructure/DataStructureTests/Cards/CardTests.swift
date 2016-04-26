@@ -28,7 +28,6 @@ class CardTests: XCTestCase {
       let final = Card.shuffle(input)
       XCTAssertNotEqual(input,final)
       print(final)
-      
     }
     
 //    func testPerformanceExample() {

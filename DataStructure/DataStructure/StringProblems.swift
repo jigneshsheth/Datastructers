@@ -68,3 +68,31 @@ public func stringPermutationWithDictionary(string1:String,string2:String) -> Bo
   }
   return dict.isEmpty
 }
+
+
+
+/**
+ Return the count of perticular char in string
+ 
+ - parameter str:  input string
+ - parameter char: char going to be search
+ 
+ - returns: count of char
+ */
+public func countCharactersInString(str:String,char:Character) -> Int {
+  
+  if !str.characters.contains(char) {
+    return 0
+  }
+
+  var counter = 0
+  for c in str.characters {
+    if c == char {
+      counter += 1
+    }
+  }
+  return counter
+}
+
+
+

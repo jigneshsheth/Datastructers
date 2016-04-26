@@ -34,4 +34,12 @@ class BitWiseOperationsTest: XCTestCase {
     }
   }
   
+  func testCountOneBitInInt() {
+    XCTAssertEqual(4, countNumberOfOne(15))
+    XCTAssertEqual(4, countNumberOfOneOptimal(15))
+    XCTAssertEqual(3, countNumberOfOneOptimal(14))
+  }
+  
+  
+  
 }
