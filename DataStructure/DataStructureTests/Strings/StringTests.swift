@@ -58,5 +58,13 @@ class StringTests: XCTestCase {
   func testReverseWord() {
     XCTAssertEqual("busy is Jignesh",reverseWords("Jignesh is busy"))
   }
+
+  
+  func testCountSubString() {
+    XCTAssertEqual(4,countSubStringInString("ThisisBadBadBadProgramming Bad a", subStr: "Bad"))
+    XCTAssertEqual(5,countSubStringInString("ThisisBadBadBadProgrammingBadads", subStr: "ad"))
+
+  }
   
 }
+

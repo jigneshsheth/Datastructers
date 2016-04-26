@@ -94,5 +94,39 @@ public func countCharactersInString(str:String,char:Character) -> Int {
   return counter
 }
 
+/**
+  Count the substring occurance in given String
+ 
+ - parameter str:    Input String
+ - parameter subStr: finding String
+ 
+ - returns: number of occurance of substring
+ */
+
+public func countSubStringInString(str:String,subStr:String) -> Int {
+//System func works fine
+//  let tok =  str.componentsSeparatedByString(subStr)
+//  return tok.count-1
+  
+  var counter = 0
+  var index = 0
+  let length = str.characters.count
+  let subStringLength = subStr.characters.count
+  var end = subStringLength
+  let stringArray = Array(str.characters)
+  while index < length - subStringLength {
+    if String(stringArray[index..<end]) == subStr {
+      counter += 1
+      index = end
+      end += subStringLength
+    }else {
+      index += 1
+      end += 1
+    }
+  }
+  return counter
+}
+
+
 
 
