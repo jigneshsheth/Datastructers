@@ -115,5 +115,12 @@ class ArrayOperationsTest: XCTestCase {
     XCTAssertEqual([2, 13, 17, 25, 31], array.arrayOutput, "BubleSort failed \(#function)")
   }
   
+  func testSecondLargestElementInArray(){
+    XCTAssertEqual(51, try! findSecondLargestElement([45, 51, 28, 75, 49, 42]))
+    XCTAssertEqual(975, try! findSecondLargestElement([985, 521, 975, 831, 479, 861]))
+    XCTAssertEqual(9459, try! findSecondLargestElement([9459, 9575, 5692, 1305, 1942, 9012]))
+    XCTAssertEqual(74562, try! findSecondLargestElement([47498, 14526, 74562, 42681, 75283, 45796]))
+  }
+  
   
 }
