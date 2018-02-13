@@ -90,9 +90,9 @@ public class BinarySearchTree{
     if root.data == value {
       return root
     } else if root.data > value {
-      return findNode_recursive(root.left, value: value)
+      return findNode_recursive(root: root.left, value: value)
     }else {
-      return findNode_recursive(root.right, value: value)
+      return findNode_recursive(root: root.right, value: value)
     }
   }
   

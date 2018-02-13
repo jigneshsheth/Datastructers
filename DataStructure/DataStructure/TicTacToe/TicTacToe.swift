@@ -24,7 +24,7 @@ public class TicTacToe:ReflectedStringConvertible {
   
   init(boardSize:Int) {
     self.boardSize = boardSize
-    board = Array(count: boardSize, repeatedValue: Array(count:boardSize, repeatedValue:TTTBoardState.Blank))
+    board = Array(repeating: Array(repeating:TTTBoardState.Blank, count:boardSize), count: boardSize)
   }
   
   
@@ -45,7 +45,7 @@ public class TicTacToe:ReflectedStringConvertible {
       if board[x][i] != state {
         break
       }
-      checkWinner(i,state: state)
+      checkWinner(postion: i,state: state)
     }
     
     // Check the row
@@ -53,7 +53,7 @@ public class TicTacToe:ReflectedStringConvertible {
       if board[i][y] != state {
         break
       }
-      checkWinner(i,state: state)
+      checkWinner(postion: i,state: state)
     }
     
     
@@ -62,7 +62,7 @@ public class TicTacToe:ReflectedStringConvertible {
       if board[i][i] != state {
         break
       }
-      checkWinner(i,state: state)
+      checkWinner(postion: i,state: state)
     }
     
     // Check the anti diagonal, the otherway
@@ -70,7 +70,7 @@ public class TicTacToe:ReflectedStringConvertible {
       if board[i][(self.boardSize - 1) - i] != state {
         break
       }
-      checkWinner(i,state: state)
+      checkWinner(postion: i,state: state)
     }
     
     
@@ -85,7 +85,7 @@ public class TicTacToe:ReflectedStringConvertible {
     logFunctionTitle()
     print("Board::: \(board)")
     print("================= **** Reset TicTacToe Board ****===================")
-    board = Array(count: self.boardSize, repeatedValue: Array(count:boardSize, repeatedValue:TTTBoardState.Blank))
+    board = Array(repeating: Array(repeating:TTTBoardState.Blank, count:boardSize), count: self.boardSize)
   }
   
   

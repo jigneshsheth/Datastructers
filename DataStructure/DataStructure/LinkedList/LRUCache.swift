@@ -38,8 +38,8 @@ public class LRUCache:ReflectedStringConvertible {
   
   public func get(key:Int) -> Int {
     if let node = dictionary[key] {
-      remove(node)
-      setHead(node)
+      remove(n:node)
+      setHead(n:node)
       return node.value
     }else {
       return -1
@@ -79,18 +79,18 @@ public class LRUCache:ReflectedStringConvertible {
   
   
   public func set(key:Int,value:Int) {
-    if let old = dictionary[key] where dictionary.keys.contains(key) {
+    if let old = dictionary[key], dictionary.keys.contains(key) {
       old.value = value
-      remove(old)
-      setHead(old)
+      remove(n:old)
+      setHead(n:old)
     }else {
       let newNode = linkedNode(key: key, value: value)
       if dictionary.count >= capacity {
-        dictionary.removeValueForKey((end!.key))
-        remove(end!)
-        setHead(newNode)
+        dictionary.removeValue(forKey: end!.key)
+        remove(n: end!)
+        setHead(n:newNode)
       }else {
-        setHead(newNode)
+        setHead(n:newNode)
       }
       dictionary[key] = newNode
     }

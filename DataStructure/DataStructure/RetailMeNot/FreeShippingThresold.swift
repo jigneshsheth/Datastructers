@@ -43,7 +43,7 @@ public func calculateFreeShipping(productPrices:[Int],freeShippingAmt:Int) -> (I
   var index2 = productPrices.count - 1
   var result:(Int,Int) = (-1,-1)
   // Below statement do O(log n)
-  let _productPrices = productPrices.sort()
+  let _productPrices = productPrices.sorted()
   
   // Below statement do O(n) so total complexity of the method is O(n log n)
   while index1 < index2 {
@@ -72,7 +72,7 @@ public func calculateFreeShippingOptimal(productPrices:[Int],freeShippingAmt:Int
   var index2 = productPrices.count - 1
   var result:(Int,Int) = (-1,-1)
   // Below statement do O(log n)
-  let _productPrices = productPrices.sort()
+  let _productPrices = productPrices.sorted()
   
   // Below statement do O(n) so total complexity of the method is O(n log n)
   while index1 < index2 {

@@ -16,8 +16,8 @@ public class StopClock {
     lastStartTime = NSDate()
   }
   
-  public func stopClock(name:String = #function) -> NSTimeInterval {
-    let total = NSDate().timeIntervalSinceDate(lastStartTime)
+  public func stopClock(name:String = #function) -> TimeInterval {
+    let total = NSDate().timeIntervalSince(lastStartTime as Date)
     print("Total Time: \(name):: ---- \(total.description)")
     return total
   }
@@ -26,7 +26,7 @@ public class StopClock {
 
 // MARK: Generic Functions
 
-public func exchange<T>(inout data:[T],index1:Int,Index2:Int) {
+public func exchange<T>( data:inout [T],index1:Int,Index2:Int) {
   let temp = data[index1]
   data[index1] = data[Index2]
   data[Index2] = temp

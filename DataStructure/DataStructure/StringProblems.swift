@@ -25,7 +25,7 @@ public func stringPermutation(string1:String,string2:String) -> Bool{
   } else if string1 == string2 {
     return true
   }
-  return string1.characters.sort() == string2.characters.sort()
+  return string1.characters.sorted() == string2.characters.sorted()
 }
 
 /**
@@ -56,10 +56,10 @@ public func stringPermutationWithDictionary(string1:String,string2:String) -> Bo
   }
   
   for char in string2Chars {
-    if let count =  dict[char] where count != 0  {
+    if let count =  dict[char], count != 0  {
       dict[char] = count - 1
       if (count - 1) == 0 {
-        dict.removeValueForKey(char)
+        dict.removeValue(forKey: char)
       }
     }else {
       return false

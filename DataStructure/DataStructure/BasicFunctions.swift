@@ -25,7 +25,7 @@ func isPrime(number:Int) -> Bool {
   //    }
   //  }
   
-  for i in 3.stride(to: number, by: 2){
+  for i in stride(from:3,to: number, by: 2){
     if number % i == 0 {
       return false
     }
@@ -35,20 +35,20 @@ func isPrime(number:Int) -> Bool {
 }
 
 public func reverseString(str:String) -> String{
-  return String(str.characters.lazy.reverse())
+  return String(str.characters.lazy.reversed())
 }
 
 
 func printPrimeNumbers(limit:Int){
   for i in 1...limit {
-    if isPrime(i) {
+    if isPrime(number: i) {
       print("\(i) is Prime Number")
     }
   }
 }
 
 
-func reverseNumber(inout input:Int) {
+func reverseNumber( input:inout Int) {
   var result = 0
   while input > 0 {
     result = ( result * 10 ) + input % 10
@@ -84,9 +84,9 @@ func reverseNum( number:Int) -> Int {
  - returns: true if the given number is power of 2
  */
 func isPowerOfTwo(input:Int) -> Bool {
-  printBinary(input)
+  printBinary(num: input)
   let num = input & (input - 1)
-  printBinary(num)
+  printBinary(num: num)
   return (input > 0) && (num == 0)
 }
 
@@ -123,7 +123,7 @@ func pairOfTwoNumber(numbers:[Int],sum:Int) -> [(Int,Int)] {
   //    }
   //  }
   //[2,3,5,5,6,4,9,8,9,2,1,7]
-  var inputDictionary = [Bool](count: 10000, repeatedValue: false)
+  var inputDictionary = [Bool](repeating: false, count: 10000)
   
   for i in 0..<numbers.count {
     let num = numbers[i]

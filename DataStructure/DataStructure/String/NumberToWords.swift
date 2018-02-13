@@ -23,12 +23,12 @@ public class NumberToWords {
     var i = 0
     while num > 0 {
       if num % 1_000 != 0 {
-        result = helper(num % 1_000) + thousands[i] + " " + result
+        result = helper(n: num % 1_000) + thousands[i] + " " + result
       }
       num /= 1_000
       i += 1
     }
-    return result.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    return result.trimmingCharacters(in:CharacterSet.whitespacesAndNewlines)
   }
   
   private class func helper(n:Int) -> String {
@@ -37,9 +37,9 @@ public class NumberToWords {
     }else if n < 20 {
       return lessThanTwenty[n]
     }else if n < 1_00 {
-      return tens[n/10]  + helper(n%10)
+      return tens[n/10]  + helper(n: n%10)
     }else {
-      return lessThanTwenty[n/1_00] + "Hundred" + helper(n%1_00)
+      return lessThanTwenty[n/1_00] + "Hundred" + helper(n: n%1_00)
     }
   }
   

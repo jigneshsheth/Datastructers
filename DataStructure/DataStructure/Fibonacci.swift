@@ -10,25 +10,25 @@ import Foundation
 
 
 public func fibonacci(num:Int) -> Int {
-  return num < 2 ? 1 : fibonacci(num - 1)  + fibonacci(num - 2)
+  return num < 2 ? 1 : fibonacci(num: num - 1)  + fibonacci(num: num - 2)
 }
 
 public func dynamicFibonacci(num:Int) -> [Int] {
   let stopWatch = StopClock()
   stopWatch.startClock()
-  var dictionary:Array<Int> = Array(count: num, repeatedValue: 0)
-  fib(num-1, dict: &dictionary)
+  var dictionary:Array<Int> = Array(repeating: 0, count: num)
+  fib(num: num-1, dict: &dictionary)
   stopWatch.stopClock()
   return dictionary
 }
 
-private func fib(num:Int,inout dict:[Int]) -> Int {
+private func fib(num:Int, dict:inout [Int]) -> Int {
 //  print("Dictionary:: \(dict)")
   if dict[num] != 0 {
 //    print("Found \(num)")
     return dict[num]
   }else {
-    let result = num < 2 ? 1 : fib(num - 2, dict: &dict) + fib(num - 1, dict: &dict)
+    let result = num < 2 ? 1 : fib(num: num - 2, dict: &dict) + fib(num: num - 1, dict: &dict)
     dict[num] = result
 //    print("New Entry \(num)")
     return result

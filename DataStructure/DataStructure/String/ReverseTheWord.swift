@@ -14,7 +14,7 @@ public func reverseWords(str:String) -> String {
   var strCharArray = Array(str.characters)
   var start=0, end = 0
   let length = str.characters.count
-  reverseStringInPlace(&strCharArray, start: start, end: length - 1)
+  reverseStringInPlace(str: &strCharArray, start: start, end: length - 1)
   
   
   while end < length {
@@ -24,7 +24,7 @@ public func reverseWords(str:String) -> String {
         end += 1
       }
       end -= 1
-      reverseStringInPlace(&strCharArray, start: start, end: end)
+      reverseStringInPlace(str: &strCharArray, start: start, end: end)
     }
     end += 1
   }
@@ -33,7 +33,7 @@ public func reverseWords(str:String) -> String {
 }
 
 
-private func reverseStringInPlace(inout str:[Character],start:Int,end:Int){
+private func reverseStringInPlace( str:inout [Character],start:Int,end:Int){
   var start = start,end = end
   while start < end {
     let temp = str[start]

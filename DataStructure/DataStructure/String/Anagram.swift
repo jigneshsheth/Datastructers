@@ -20,15 +20,15 @@ import Foundation
 public func isAnagram(str1 str1:String,str2:String) -> Bool {
   
   func convertStringToCharacterArray(input:String) -> [Character] {
-    return input.lowercaseString.characters.filter{ $0 != " " }
+    return input.lowercased().characters.filter{ $0 != " " }
   }
   
-  let original = convertStringToCharacterArray(str1)
-  var compare = convertStringToCharacterArray(str2)
+  let original = convertStringToCharacterArray(input: str1)
+  var compare = convertStringToCharacterArray(input: str2)
   
   for char in original{
-    if let index = compare.indexOf(char) {
-      compare.removeAtIndex(index)
+    if let index = compare.index(of: char) {
+      compare.remove(at: index)
     }else {
       break
     }

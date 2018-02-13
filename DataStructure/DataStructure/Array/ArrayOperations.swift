@@ -32,10 +32,10 @@ public class ArrayOperations {
   }
   
   public func insert(position:Int,num:Int) {
-    for i in (arr.count-1).stride(to: position, by: -1){
+    for i in stride(from:(arr.count-1),to: position, by: -1){
       arr[i] = arr[i-1]
     }
-    arr.insert(num, atIndex: position)
+    arr.insert(num, at: position)
   }
   
   
@@ -44,7 +44,7 @@ public class ArrayOperations {
       arr[i] = arr[i+1]
     }
 //    arr.removeLast()
-    arr.removeAtIndex(arr.count - 1)
+    arr.remove(at: arr.count - 1)
   }
   
   
@@ -95,7 +95,7 @@ extension ArrayOperations {
       for j in (i+1)..<arr.count {
         // We selected arr[i] as first selected value
         if arr[i] > arr[j] {
-          exchange(&arr, index1: i, Index2: j)
+          exchange(data: &arr, index1: i, Index2: j)
         }
       }
       print("Iteration: \(i)")
@@ -113,7 +113,7 @@ extension ArrayOperations {
     for i in 0..<arr.count {
       for j in 0..<arr.count-i-1 {
         if arr[j] > arr[j+1] {
-          exchange(&arr, index1: j, Index2: j+1)
+          exchange(data: &arr, index1: j, Index2: j+1)
         }
       }
       print("Iteration: \(i)")
@@ -135,7 +135,7 @@ extension ArrayOperations {
           
           var tempIndex = i
           //Interesting swap
-          for k in i.stride(to: j, by: -1){
+          for k in stride(from:i,to: j, by: -1){
             arr[k] = arr[k-1]
             tempIndex = k
           }
@@ -164,7 +164,7 @@ extension ArrayOperations {
   public func mergeSortedArrays(a:[Int],b:[Int]){
     
     
-    for i in 0..<a.count {
+    for _ in 0..<a.count {
       
     }
     
