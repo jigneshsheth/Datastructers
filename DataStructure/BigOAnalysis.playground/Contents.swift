@@ -9,7 +9,7 @@ for i in 0...100 {
 
 
 
-for i in 0.stride(to: 100, by: 1){
+for i in stride(from:0,to: 100, by: 1){
   i*i
 }
 
