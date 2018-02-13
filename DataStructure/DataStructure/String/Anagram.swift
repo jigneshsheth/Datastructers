@@ -17,10 +17,10 @@ import Foundation
  
  - returns: true if the string is anagram otherwise false.
  */
-public func isAnagram(str1 str1:String,str2:String) -> Bool {
+public func isAnagram(str1:String,str2:String) -> Bool {
   
   func convertStringToCharacterArray(input:String) -> [Character] {
-    return input.lowercased().characters.filter{ $0 != " " }
+    return input.lowercased().filter{ $0 != " " }
   }
   
   let original = convertStringToCharacterArray(input: str1)
