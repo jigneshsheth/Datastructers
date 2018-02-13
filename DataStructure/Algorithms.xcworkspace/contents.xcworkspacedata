@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../../Downloads/RetainCycle.playground">
+      location = "group:RetainCycle.playground">
    </FileRef>
    <FileRef
       location = "group:DataStructure.xcodeproj">
