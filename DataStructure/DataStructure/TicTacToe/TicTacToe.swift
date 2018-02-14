@@ -28,7 +28,7 @@ public class TicTacToe:ReflectedStringConvertible {
   }
   
   
-  public func move(x x:Int,y:Int,state:TTTBoardState) {
+	public func move(x:Int,y:Int,state:TTTBoardState) {
     
     if board[x][y] == TTTBoardState.Blank {
       board[x][y] = state

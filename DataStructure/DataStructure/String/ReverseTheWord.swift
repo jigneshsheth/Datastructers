@@ -11,9 +11,9 @@ import Foundation
 
 public func reverseWords(str:String) -> String {
   
-  var strCharArray = Array(str.characters)
+  var strCharArray = Array(str)
   var start=0, end = 0
-  let length = str.characters.count
+  let length = str.count
   reverseStringInPlace(str: &strCharArray, start: start, end: length - 1)
   
   

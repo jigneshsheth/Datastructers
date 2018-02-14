@@ -20,12 +20,12 @@ import Foundation
  - returns: true if string1 and string2 is permutation of each other
  */
 public func stringPermutation(string1:String,string2:String) -> Bool{
-  if string1.characters.count != string2.characters.count {
+  if string1.count != string2.count {
     return false
   } else if string1 == string2 {
     return true
   }
-  return string1.characters.sorted() == string2.characters.sorted()
+  return string1.sorted() == string2.sorted()
 }
 
 /**
@@ -37,8 +37,8 @@ public func stringPermutation(string1:String,string2:String) -> Bool{
  - returns: true if string1 and string2 is permutation of each other
  */
 public func stringPermutationWithDictionary(string1:String,string2:String) -> Bool{
-  let string1Chars = string1.characters
-  let string2Chars = string2.characters
+  let string1Chars = string1
+  let string2Chars = string2
   if string1Chars.count != string2Chars.count {
     return false
   } else if string1 == string2 {
@@ -81,12 +81,12 @@ public func stringPermutationWithDictionary(string1:String,string2:String) -> Bo
  */
 public func countCharactersInString(str:String,char:Character) -> Int {
   
-  if !str.characters.contains(char) {
+  if !str.contains(char) {
     return 0
   }
 
   var counter = 0
-  for c in str.characters {
+  for c in str {
     if c == char {
       counter += 1
     }
@@ -110,19 +110,19 @@ public func countSubStringInString(str:String,subStr:String) -> Int {
   
   var counter = 0
   var index = 0
-  let length = str.characters.count
-  let subStringLength = subStr.characters.count
+  let length = str.count
+  let subStringLength = subStr.count
   var end = subStringLength
-  let stringArray = Array(str.characters)
+  let stringArray = str
   while index < length - subStringLength {
-    if String(stringArray[index..<end]) == subStr {
-      counter += 1
-      index = end
-      end += subStringLength
-    }else {
-      index += 1
-      end += 1
-    }
+//    if String(str[index..<end]) == subStr {
+//      counter += 1
+//      index = end
+//      end += subStringLength
+//    }else {
+//      index += 1
+//      end += 1
+//    }
   }
   return counter
 }
