@@ -16,8 +16,6 @@ public enum  TTTBoardState {
 
 public class TicTacToe:ReflectedStringConvertible {
   
-  
-  
   let boardSize:Int
   var board:[[TTTBoardState]]
   private var moveCount = 0

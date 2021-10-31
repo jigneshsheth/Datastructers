@@ -32,7 +32,7 @@
 		D0E65F8E1CCF292300913D9E /* ReverseTheWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F8D1CCF292300913D9E /* ReverseTheWord.swift */; };
 		D0E65F901CCF3B5800913D9E /* SecondLargestElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F8F1CCF3B5800913D9E /* SecondLargestElements.swift */; };
 		D0E65F931CCF585E00913D9E /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E65F921CCF585E00913D9E /* LinkedListTests.swift */; };
-		D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */; };
+		D0FEE15E1CC864EB00DA2D76 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15D1CC864EB00DA2D76 /* FizzBuzz.swift */; };
 		D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */; };
 		D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1621CC878CD00DA2D76 /* Utils.swift */; };
 		D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEE1651CC8E9A300DA2D76 /* LRUCache.swift */; };
@@ -77,7 +77,7 @@
 		D0E65F8D1CCF292300913D9E /* ReverseTheWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReverseTheWord.swift; path = String/ReverseTheWord.swift; sourceTree = "<group>"; };
 		D0E65F8F1CCF3B5800913D9E /* SecondLargestElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondLargestElements.swift; path = Array/SecondLargestElements.swift; sourceTree = "<group>"; };
 		D0E65F921CCF585E00913D9E /* LinkedListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkedListTests.swift; path = LinkedList/LinkedListTests.swift; sourceTree = "<group>"; };
-		D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RMNBasicFunctions.swift; path = RetailMeNot/RMNBasicFunctions.swift; sourceTree = "<group>"; };
+		D0FEE15D1CC864EB00DA2D76 /* FizzBuzz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FizzBuzz.swift; path = RetailMeNot/FizzBuzz.swift; sourceTree = "<group>"; };
 		D0FEE15F1CC8741B00DA2D76 /* Fibonacci.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		D0FEE1621CC878CD00DA2D76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
 		D0FEE1651CC8E9A300DA2D76 /* LRUCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LRUCache.swift; path = LinkedList/LRUCache.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				D04BABE11CAC12790085EB59 /* FreeShippingThresold.swift */,
-				D0FEE15D1CC864EB00DA2D76 /* RMNBasicFunctions.swift */,
+				D0FEE15D1CC864EB00DA2D76 /* FizzBuzz.swift */,
 			);
 			name = " RetailMeNot";
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 				D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */,
 				D0E65F791CCDCEC900913D9E /* Anagram.swift in Sources */,
 				D0E65F771CCDCEA500913D9E /* StringProblems.swift in Sources */,
-				D0FEE15E1CC864EB00DA2D76 /* RMNBasicFunctions.swift in Sources */,
+				D0FEE15E1CC864EB00DA2D76 /* FizzBuzz.swift in Sources */,
 				D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */,
 				D0E65F8C1CCDF74700913D9E /* NumberToWords.swift in Sources */,
 				D09BDA991CA0CC9D003C441B /* Card.swift in Sources */,
