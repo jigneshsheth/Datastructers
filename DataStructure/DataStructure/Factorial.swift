@@ -15,7 +15,7 @@ import Foundation
  
  - returns: int factorial for given number.
  */
-public func factorial(number:Int) -> Int{
+public func factorial(_ number:Int) -> Int{
   return number < 1 ? 0 : (1...number).reduce(1, *)
 }
 

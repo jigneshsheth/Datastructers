@@ -23,17 +23,17 @@ class LinkedListTests: XCTestCase {
   
   func testLRUCache() {
     let lru = LRUCache(capacity: 5)
-    lru.set(1, value: 1)
-    lru.set(2, value: 2)
-    lru.set(3, value: 3)
-    lru.set(4, value: 4)
-    lru.set(5, value: 5)
+		lru.set(key: 1, value: 1)
+		lru.set(key: 2, value: 2)
+		lru.set(key:3, value: 3)
+		lru.set(key:4, value: 4)
+		lru.set(key:5, value: 5)
     
     print(lru)
-    print("Value 1:: \(lru.get(1))")
+		print("Value 1:: \(lru.get(key:1))")
     print(lru)
-    lru.set(6, value: 6)
-    print("Value 2:: \(lru.get(2))")
+		lru.set(key:6, value: 6)
+		print("Value 2:: \(lru.get(key:2))")
     print(lru)
   }
   

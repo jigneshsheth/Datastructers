@@ -14,7 +14,7 @@ public class NumberToWords {
   static let tens = ["","Twenty","Thirty","Fourty","Fifty","Sixty","Seventy","Eighty","Nenety"]
   static let thousands = ["","Thousand","Million","Billion"]
   
-  public class func numberToWords(number:Int) -> String{
+  public class func numberToWords(_ number:Int) -> String{
     if number == 0 {
       return "Zero"
     }

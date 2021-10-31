@@ -19,7 +19,7 @@ import Foundation
  
  - returns: true if string1 and string2 is permutation of each other
  */
-public func stringPermutation(string1:String,string2:String) -> Bool{
+public func stringPermutation(_ string1:String,string2:String) -> Bool{
   if string1.count != string2.count {
     return false
   } else if string1 == string2 {
@@ -79,7 +79,7 @@ public func stringPermutationWithDictionary(string1:String,string2:String) -> Bo
  
  - returns: count of char
  */
-public func countCharactersInString(str:String,char:Character) -> Int {
+public func countCharactersInString(_ str:String,char:Character) -> Int {
   
   if !str.contains(char) {
     return 0
@@ -105,26 +105,8 @@ public func countCharactersInString(str:String,char:Character) -> Int {
 
 public func countSubStringInString(str:String,subStr:String) -> Int {
 //System func works fine
-//  let tok =  str.componentsSeparatedByString(subStr)
-//  return tok.count-1
-  
-  var counter = 0
-  var index = 0
-  let length = str.count
-  let subStringLength = subStr.count
-  var end = subStringLength
-  let stringArray = str
-  while index < length - subStringLength {
-//    if String(str[index..<end]) == subStr {
-//      counter += 1
-//      index = end
-//      end += subStringLength
-//    }else {
-//      index += 1
-//      end += 1
-//    }
-  }
-  return counter
+  let tok =  str.components(separatedBy: subStr)
+  return tok.count-1
 }
 
 

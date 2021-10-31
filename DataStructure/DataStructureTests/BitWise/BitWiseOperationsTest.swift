@@ -22,23 +22,23 @@ class BitWiseOperationsTest: XCTestCase {
   }
   
   func testAddingTwoIntValues() {
-    XCTAssertEqual(29,addTwoInt(15, b: 14))
-    XCTAssertEqual(47,addTwoInt(15, b: 32))
-    XCTAssertNotEqual(29,addTwoInt(15, b: 32))
+		XCTAssertEqual(29,addTwoInt(a: 15, b: 14))
+		XCTAssertEqual(47,addTwoInt(a:15, b: 32))
+		XCTAssertNotEqual(29,addTwoInt(a:15, b: 32))
   }
   
   func testPerformanceExample() {
     // This is an example of a performance test case.
-    self.measureBlock {
+		self.measure {
       // Put the code you want to measure the time of here.
     }
   }
   
   func testCountOneBitInInt() {
-    XCTAssertEqual(4, countNumberOfOne(15))
-    XCTAssertEqual(2, countNumberOfOneOptimal(5))
-    XCTAssertEqual(4, countNumberOfOneOptimal(15))
-    XCTAssertEqual(3, countNumberOfOneOptimal(14))
+		XCTAssertEqual(4, countNumberOfOne(num:15))
+		XCTAssertEqual(2, countNumberOfOneOptimal(num:5))
+		XCTAssertEqual(4, countNumberOfOneOptimal(num:15))
+		XCTAssertEqual(3, countNumberOfOneOptimal(num:14))
   }
   
   

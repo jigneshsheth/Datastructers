@@ -13,7 +13,7 @@ import Foundation
 
 
 // MARK: Arithmentic functions
-func isPrime(number:Int) -> Bool {
+func isPrime(_ number:Int) -> Bool {
   
   if number % 2 == 0 || number == 1 {
     return false
@@ -34,21 +34,21 @@ func isPrime(number:Int) -> Bool {
   return true
 }
 
-public func reverseString(str:String) -> String{
-  return String(str.characters.lazy.reversed())
+public func reverseString(_ str:String) -> String{
+	return String(str.reversed())
 }
 
 
 func printPrimeNumbers(limit:Int){
   for i in 1...limit {
-    if isPrime(number: i) {
+		if isPrime(i) {
       print("\(i) is Prime Number")
     }
   }
 }
 
 
-func reverseNumber( input:inout Int) {
+func reverseNumber(_ input:inout Int) {
   var result = 0
   while input > 0 {
     result = ( result * 10 ) + input % 10
@@ -65,7 +65,7 @@ func reverseNumber( input:inout Int) {
  
  - returns: reverse number
  */
-func reverseNum( number:Int) -> Int {
+func reverseNum(_ number:Int) -> Int {
   var number = number
   var result = 0
   while number > 0 {
@@ -83,7 +83,7 @@ func reverseNum( number:Int) -> Int {
  
  - returns: true if the given number is power of 2
  */
-func isPowerOfTwo(input:Int) -> Bool {
+func isPowerOfTwo(_ input:Int) -> Bool {
   printBinary(num: input)
   let num = input & (input - 1)
   printBinary(num: num)

@@ -27,7 +27,7 @@ public func isAnagram(str1:String,str2:String) -> Bool {
   var compare = convertStringToCharacterArray(input: str2)
   
   for char in original{
-    if let index = compare.index(of: char) {
+		if let index = compare.firstIndex(of: char) {
       compare.remove(at: index)
     }else {
       break

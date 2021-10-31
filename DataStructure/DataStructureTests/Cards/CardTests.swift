@@ -25,14 +25,14 @@ class CardTests: XCTestCase {
       // Convert Range into Array
       let input = (1...100).map{$0}
       print("Input \(input)")
-      let final = Card.shuffle(input)
+			let final = Card.shuffle(input: input)
       XCTAssertNotEqual(input,final)
       print(final)
     }
     
 //    func testPerformanceExample() {
 //        // This is an example of a performance test case.
-//        self.measureBlock {
+//        self.measure {
 //            // Put the code you want to measure the time of here.
 //        }
 //    }

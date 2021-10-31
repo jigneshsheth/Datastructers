@@ -25,23 +25,23 @@ class StringTests: XCTestCase {
     var string1 = "ABC"
     var string2 = "CBA"
     XCTAssertTrue(stringPermutation(string1, string2: string2))
-    XCTAssertTrue(stringPermutationWithDictionary(string1, string2: string2))
+		XCTAssertTrue(stringPermutationWithDictionary(string1: string1, string2: string2))
     string1 += "D"
     XCTAssertFalse(stringPermutation(string1, string2: string2))
-    XCTAssertFalse(stringPermutationWithDictionary(string1, string2: string2))
+		XCTAssertFalse(stringPermutationWithDictionary(string1: string1, string2: string2))
     
   }
   
   func testPerformanceExample() {
     // This is an example of a performance test case.
-    self.measureBlock {
+    self.measure {
       // Put the code you want to measure the time of here.
     }
   }
   
   
   func testNumberToWords(){
-    XCTAssertEqual("OneHundredThirtyThree",NumberToWords.numberToWords(123))
+		XCTAssertEqual("OneHundredThirtyThree",NumberToWords.numberToWords(123))
   }
   
   func testCountCharInString(){
@@ -56,13 +56,13 @@ class StringTests: XCTestCase {
   
   
   func testReverseWord() {
-    XCTAssertEqual("busy is Jignesh",reverseWords("Jignesh is busy"))
+		XCTAssertEqual("busy is Jignesh",reverseWords("Jignesh is busy"))
   }
 
   
   func testCountSubString() {
-    XCTAssertEqual(4,countSubStringInString("ThisisBadBadBadProgramming Bad a", subStr: "Bad"))
-    XCTAssertEqual(5,countSubStringInString("ThisisBadBadBadProgrammingBadads", subStr: "ad"))
+		XCTAssertEqual(4,countSubStringInString(str: "ThisisBadBadBadProgramming Bad a", subStr: "Bad"))
+		XCTAssertEqual(5,countSubStringInString(str: "ThisisBadBadBadProgrammingBadads", subStr: "ad"))
 
   }
   

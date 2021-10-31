@@ -9,7 +9,7 @@
 import Foundation
 
 
-public func reverseWords(str:String) -> String {
+public func reverseWords(_ str:String) -> String {
   
   var strCharArray = Array(str)
   var start=0, end = 0

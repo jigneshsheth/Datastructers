@@ -23,13 +23,13 @@ class ArrayOperationsTest: XCTestCase {
   }
   
   func testInsert() {
-    operations?.insert(0, num: 10)
-    operations?.insert(1, num: 11)
-    operations?.insert(2, num: 12)
-    operations?.insert(3, num: 13)
-    operations?.insert(4, num: 14)
-    operations?.insert(5, num: 15)
-    operations?.insert(6, num: 16)
+		operations?.insert(position:0, num: 10)
+		operations?.insert(position:1, num: 11)
+		operations?.insert(position:2, num: 12)
+		operations?.insert(position:3, num: 13)
+		operations?.insert(position:4, num: 14)
+		operations?.insert(position:5, num: 15)
+		operations?.insert(position:6, num: 16)
     
     operations?.display()
     XCTAssertEqual([10, 11, 12, 13, 14, 15, 16], (operations?.arrayOutput)!, "Insertion failed into an Array operation")
@@ -37,58 +37,58 @@ class ArrayOperationsTest: XCTestCase {
   
   
   func testDelete() {
-    operations?.insert(0, num: 10)
-    operations?.insert(1, num: 11)
-    operations?.insert(2, num: 12)
-    operations?.insert(3, num: 13)
-    operations?.insert(4, num: 14)
-    operations?.insert(5, num: 15)
-    operations?.insert(6, num: 16)
+		operations?.insert(position:0, num: 10)
+		operations?.insert(position:1, num: 11)
+		operations?.insert(position:2, num: 12)
+		operations?.insert(position:3, num: 13)
+		operations?.insert(position:4, num: 14)
+		operations?.insert(position:5, num: 15)
+		operations?.insert(position:6, num: 16)
     
     operations?.display()
-    operations?.delete(1)
+		operations?.delete(position:1)
     XCTAssertEqual([10, 12, 13, 14, 15, 16], (operations?.arrayOutput)!, "Deletion failed into an Array operation")
     
     
     operations?.display()
-    operations?.delete(0)
+		operations?.delete(position:0)
     XCTAssertEqual([12, 13, 14, 15, 16], (operations?.arrayOutput)!, "Deletion failed into an Array operation")
     operations?.display()
-    operations?.delete(4)
+		operations?.delete(position:4)
     XCTAssertEqual([12, 13, 14, 15], (operations?.arrayOutput)!, "Deletion failed into an Array operation")
     operations?.display()
-    operations?.delete(2)
+		operations?.delete(position:2)
     XCTAssertEqual([12, 13,15], (operations?.arrayOutput)!, "Deletion failed into an Array operation")
     operations?.display()
-    operations?.delete(2)
+		operations?.delete(position:2)
     XCTAssertEqual([12, 13], (operations?.arrayOutput)!, "Deletion failed into an Array operation")
     operations?.display()
-    operations?.delete(0)
+		operations?.delete(position: 0)
     XCTAssertEqual([13], (operations?.arrayOutput)!, "Deletion failed into an Array operation")
   }
   
   
   func testReverse() {
-    operations?.insert(0, num: 10)
-    operations?.insert(1, num: 11)
-    operations?.insert(2, num: 12)
-    operations?.insert(3, num: 13)
-    operations?.insert(4, num: 14)
-    operations?.insert(5, num: 15)
-    operations?.insert(6, num: 16)
+		operations?.insert(position:0, num: 10)
+		operations?.insert(position:1, num: 11)
+		operations?.insert(position:2, num: 12)
+    operations?.insert(position:3, num: 13)
+    operations?.insert(position:4, num: 14)
+    operations?.insert(position:5, num: 15)
+    operations?.insert(position:6, num: 16)
     
     operations?.display()
-    operations?.delete(1)
+		operations?.delete(position: 1)
     operations?.reverse()
-    XCTAssertEqual([10,12, 13, 14, 15, 16].reverse(), (operations?.arrayOutput)!, "Reverse failed into an Array operation")
+    XCTAssertEqual([10,12, 13, 14, 15, 16].reversed(), (operations?.arrayOutput)!, "Reverse failed into an Array operation")
     
     
     operations?.display()
-    operations?.delete(0)
+		operations?.delete(position: 0)
     operations?.reverse()
     XCTAssertEqual([10, 12, 13, 14, 15], (operations?.arrayOutput)!, "Reverse failed into an Array operation")
     operations?.display()
-    operations?.delete(4)
+		operations?.delete(position: 4)
     operations?.reverse()
     XCTAssertEqual([14, 13, 12, 10], (operations?.arrayOutput)!, "Reverse failed into an Array operation")
     operations?.display()
@@ -116,10 +116,10 @@ class ArrayOperationsTest: XCTestCase {
   }
   
   func testSecondLargestElementInArray(){
-    XCTAssertEqual(51, try! findSecondLargestElement([45, 51, 28, 75, 49, 42]))
-    XCTAssertEqual(975, try! findSecondLargestElement([985, 521, 975, 831, 479, 861]))
-    XCTAssertEqual(9459, try! findSecondLargestElement([9459, 9575, 5692, 1305, 1942, 9012]))
-    XCTAssertEqual(74562, try! findSecondLargestElement([47498, 14526, 74562, 42681, 75283, 45796]))
+		XCTAssertEqual(51, try! findSecondLargestElement(input: [45, 51, 28, 75, 49, 42]))
+		XCTAssertEqual(975, try! findSecondLargestElement(input: [985, 521, 975, 831, 479, 861]))
+		XCTAssertEqual(9459, try! findSecondLargestElement(input: [9459, 9575, 5692, 1305, 1942, 9012]))
+		XCTAssertEqual(74562, try! findSecondLargestElement(input: [47498, 14526, 74562, 42681, 75283, 45796]))
   }
   
   
