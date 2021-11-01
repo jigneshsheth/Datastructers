@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19B73085272F89CC009E6C1C /* Spacecraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73084272F89CC009E6C1C /* Spacecraft.swift */; };
+		19B73088272F8F26009E6C1C /* SpacecraftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73087272F8F26009E6C1C /* SpacecraftTest.swift */; };
 		D00E79801C99C3250055C862 /* DataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = D00E797F1C99C3250055C862 /* DataStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00E79871C99C3250055C862 /* DataStructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E797C1C99C3250055C862 /* DataStructure.framework */; };
 		D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E798B1C99C3250055C862 /* DataStructureTests.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19B73084272F89CC009E6C1C /* Spacecraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacecraft.swift; sourceTree = "<group>"; };
+		19B73087272F8F26009E6C1C /* SpacecraftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacecraftTest.swift; sourceTree = "<group>"; };
 		D00E797C1C99C3250055C862 /* DataStructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E797F1C99C3250055C862 /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		D00E79811C99C3250055C862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19B73081272F894F009E6C1C /* Shopify */ = {
+			isa = PBXGroup;
+			children = (
+				19B73084272F89CC009E6C1C /* Spacecraft.swift */,
+			);
+			path = Shopify;
+			sourceTree = "<group>";
+		};
+		19B73086272F8F0D009E6C1C /* Shopify */ = {
+			isa = PBXGroup;
+			children = (
+				19B73087272F8F26009E6C1C /* SpacecraftTest.swift */,
+			);
+			path = Shopify;
+			sourceTree = "<group>";
+		};
 		D00E79721C99C3250055C862 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +143,7 @@
 		D00E797E1C99C3250055C862 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				19B73081272F894F009E6C1C /* Shopify */,
 				D0E65F851CCDF10C00913D9E /* BitWise */,
 				D0E65F7D1CCDD6A100913D9E /* TicTacToe */,
 				D0E65F751CCDCE9200913D9E /* String */,
@@ -145,6 +166,7 @@
 		D00E798A1C99C3250055C862 /* DataStructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				19B73086272F8F0D009E6C1C /* Shopify */,
 				D0E65F911CCF584700913D9E /* LinkedList */,
 				D0E65F881CCDF21000913D9E /* BitWise */,
 				D0E65F801CCDDE2B00913D9E /* TicTacToe */,
@@ -400,6 +422,7 @@
 				D0FEE15E1CC864EB00DA2D76 /* FizzBuzz.swift in Sources */,
 				D0FEE1631CC878CD00DA2D76 /* Utils.swift in Sources */,
 				D0E65F8C1CCDF74700913D9E /* NumberToWords.swift in Sources */,
+				19B73085272F89CC009E6C1C /* Spacecraft.swift in Sources */,
 				D09BDA991CA0CC9D003C441B /* Card.swift in Sources */,
 				D0E65F871CCDF12000913D9E /* BitWiseOperations.swift in Sources */,
 				D0E65F841CCDDED000913D9E /* ReflectedStringConvertible.swift in Sources */,
@@ -412,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E65F821CCDDE4300913D9E /* TicTacToeTest.swift in Sources */,
+				19B73088272F8F26009E6C1C /* SpacecraftTest.swift in Sources */,
 				D04BABE41CAC14110085EB59 /* RetailMeNotTests.swift in Sources */,
 				D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */,
 				D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */,
