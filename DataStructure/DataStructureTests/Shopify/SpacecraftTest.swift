@@ -21,16 +21,17 @@ class SpacecraftTest: XCTestCase {
 	
 	func testSpacecarft() throws {
 		let spaceCraft = Spacecraft(position: Point(x: 0, y: 0))
-		while true {
+		var go = true
+		while go {
 			print("\n ---- Choose 1 below option --- \n")
 			print(" ---- Choose W to Move UP --- ")
 			print(" ---- Choose A to Move Left --- ")
 			print(" ---- Choose D to Move Right --- ")
 			print(" ---- Choose S to descrease the speed --- \n")
-			print(" ---- Reset R ---")
+			print(" ---- Reset R -- End \"E\"-")
 
 			
-			guard let selection = readLine()?.uppercased(), selection.contains("W") || selection.contains("A") || selection.contains("S") || selection.contains("D") || selection.contains("R") else {
+			guard let selection = readLine()?.uppercased(), selection.contains("W") || selection.contains("A") || selection.contains("S") || selection.contains("D") || selection.contains("R") || selection.contains("E") else {
 				print("\n##### Wrong key selection ###########\n")
 				continue
 			}
@@ -62,6 +63,9 @@ class SpacecraftTest: XCTestCase {
 				spaceCraft.moveRight(position:1)
 			case "R":
 				spaceCraft.reset()
+			case "E":
+				go = false
+				break
 			default:
 				print("\n##### Wrong key selection ########### \n")
 			}
