@@ -47,7 +47,7 @@ import Foundation
 
 
 /// Point is representing the (x,y) co-ordinate on the plan
-class Point: Equatable {
+struct Point: Equatable,CustomStringConvertible {
 	
 	var x:Int
 	var y:Int
