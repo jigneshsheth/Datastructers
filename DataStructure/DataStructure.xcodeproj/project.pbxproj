@@ -18,6 +18,8 @@
 		19D1C7012731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7002731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift */; };
 		19D1C7032731DD86000602E1 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7022731DD86000602E1 /* LongestSubstring.swift */; };
 		19D1C7052731E510000602E1 /* LongestSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7042731E510000602E1 /* LongestSubstringTest.swift */; };
+		19D1C7072731ED6A000602E1 /* FindMedianSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7062731ED6A000602E1 /* FindMedianSortedArray.swift */; };
+		19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7082731EF1B000602E1 /* FindMedianSortedArrayTest.swift */; };
 		D00E79801C99C3250055C862 /* DataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = D00E797F1C99C3250055C862 /* DataStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00E79871C99C3250055C862 /* DataStructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E797C1C99C3250055C862 /* DataStructure.framework */; };
 		D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E798B1C99C3250055C862 /* DataStructureTests.swift */; };
@@ -70,6 +72,8 @@
 		19D1C7002731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTwoNumber_LinkedList_Test.swift; sourceTree = "<group>"; };
 		19D1C7022731DD86000602E1 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		19D1C7042731E510000602E1 /* LongestSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LongestSubstringTest.swift; path = Strings/LongestSubstringTest.swift; sourceTree = "<group>"; };
+		19D1C7062731ED6A000602E1 /* FindMedianSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedianSortedArray.swift; sourceTree = "<group>"; };
+		19D1C7082731EF1B000602E1 /* FindMedianSortedArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedianSortedArrayTest.swift; sourceTree = "<group>"; };
 		D00E797C1C99C3250055C862 /* DataStructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E797F1C99C3250055C862 /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		D00E79811C99C3250055C862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			children = (
 				19D1C6FC2731A634000602E1 /* TwoSumTest.swift */,
 				19D1C7002731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift */,
+				19D1C7082731EF1B000602E1 /* FindMedianSortedArrayTest.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				D0E65F8F1CCF3B5800913D9E /* SecondLargestElements.swift */,
 				19D1C6F92731A0A9000602E1 /* TowSum.swift */,
 				19D1C6FE2731A969000602E1 /* AddTwoNumber_LinkedList.swift */,
+				19D1C7062731ED6A000602E1 /* FindMedianSortedArray.swift */,
 			);
 			name = Array;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 				D00FDAA31CBCAAB7008E128C /* ArrayOperations.swift in Sources */,
 				D0E65F8E1CCF292300913D9E /* ReverseTheWord.swift in Sources */,
 				D0E65F7F1CCDD6BC00913D9E /* TicTacToe.swift in Sources */,
+				19D1C7072731ED6A000602E1 /* FindMedianSortedArray.swift in Sources */,
 				D0E65F901CCF3B5800913D9E /* SecondLargestElements.swift in Sources */,
 				19D1C6FF2731A969000602E1 /* AddTwoNumber_LinkedList.swift in Sources */,
 				D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */,
@@ -482,6 +489,7 @@
 				D0E65F8A1CCDF22D00913D9E /* BitWiseOperationsTest.swift in Sources */,
 				19D1C6F627303DA2000602E1 /* IDCodeVerification.swift in Sources */,
 				D09BDA9B1CA1999B003C441B /* CardTests.swift in Sources */,
+				19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */,
 				D0E65F931CCF585E00913D9E /* LinkedListTests.swift in Sources */,
 				19D1C7012731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift in Sources */,
 				D00FDAA51CBCB149008E128C /* ArrayOperationsTest.swift in Sources */,
