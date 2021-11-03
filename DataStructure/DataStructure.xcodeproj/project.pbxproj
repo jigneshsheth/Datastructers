@@ -20,6 +20,7 @@
 		19D1C7052731E510000602E1 /* LongestSubstringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7042731E510000602E1 /* LongestSubstringTest.swift */; };
 		19D1C7072731ED6A000602E1 /* FindMedianSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7062731ED6A000602E1 /* FindMedianSortedArray.swift */; };
 		19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C7082731EF1B000602E1 /* FindMedianSortedArrayTest.swift */; };
+		19D1C70B2732FDBF000602E1 /* ProductDataSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C70A2732FDBF000602E1 /* ProductDataSorting.swift */; };
 		D00E79801C99C3250055C862 /* DataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = D00E797F1C99C3250055C862 /* DataStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00E79871C99C3250055C862 /* DataStructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E797C1C99C3250055C862 /* DataStructure.framework */; };
 		D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E798B1C99C3250055C862 /* DataStructureTests.swift */; };
@@ -74,6 +75,7 @@
 		19D1C7042731E510000602E1 /* LongestSubstringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LongestSubstringTest.swift; path = Strings/LongestSubstringTest.swift; sourceTree = "<group>"; };
 		19D1C7062731ED6A000602E1 /* FindMedianSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedianSortedArray.swift; sourceTree = "<group>"; };
 		19D1C7082731EF1B000602E1 /* FindMedianSortedArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedianSortedArrayTest.swift; sourceTree = "<group>"; };
+		19D1C70A2732FDBF000602E1 /* ProductDataSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataSorting.swift; sourceTree = "<group>"; };
 		D00E797C1C99C3250055C862 /* DataStructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E797F1C99C3250055C862 /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		D00E79811C99C3250055C862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				19B73084272F89CC009E6C1C /* Spacecraft.swift */,
 				19D1C6F427303DA2000602E1 /* IDCodeVerification.swift */,
+				19D1C70A2732FDBF000602E1 /* ProductDataSorting.swift */,
 			);
 			path = Shopify;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */,
 				D04BABE21CAC12790085EB59 /* FreeShippingThresold.swift in Sources */,
 				D0D598481CA04AC400FB71FA /* BinarySearchTree.swift in Sources */,
+				19D1C70B2732FDBF000602E1 /* ProductDataSorting.swift in Sources */,
 				D0D393751CAC3DD30087497E /* IntExtension.swift in Sources */,
 				D00FDAA31CBCAAB7008E128C /* ArrayOperations.swift in Sources */,
 				D0E65F8E1CCF292300913D9E /* ReverseTheWord.swift in Sources */,

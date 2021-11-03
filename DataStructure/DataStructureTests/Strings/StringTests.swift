@@ -23,7 +23,7 @@ class StringTests: XCTestCase {
   
   func testPermutation() {
     var string1 = "ABC"
-    var string2 = "CBA"
+		let string2 = "CBA"
     XCTAssertTrue(stringPermutation(string1, string2: string2))
 		XCTAssertTrue(stringPermutationWithDictionary(string1: string1, string2: string2))
     string1 += "D"
