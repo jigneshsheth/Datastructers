@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E7F72733B52700808B0B /* ProductSortingTest.swift */; };
 		19B73085272F89CC009E6C1C /* Spacecraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73084272F89CC009E6C1C /* Spacecraft.swift */; };
 		19B73088272F8F26009E6C1C /* SpacecraftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73087272F8F26009E6C1C /* SpacecraftTest.swift */; };
 		19D1C6F527303DA2000602E1 /* IDCodeVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C6F427303DA2000602E1 /* IDCodeVerification.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1902E7F72733B52700808B0B /* ProductSortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSortingTest.swift; sourceTree = "<group>"; };
 		19B73084272F89CC009E6C1C /* Spacecraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacecraft.swift; sourceTree = "<group>"; };
 		19B73087272F8F26009E6C1C /* SpacecraftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacecraftTest.swift; sourceTree = "<group>"; };
 		19D1C6F427303DA2000602E1 /* IDCodeVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCodeVerification.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				19B73087272F8F26009E6C1C /* SpacecraftTest.swift */,
 				19D1C6F727303E57000602E1 /* IDVerificationTest.swift */,
+				1902E7F72733B52700808B0B /* ProductSortingTest.swift */,
 			);
 			path = Shopify;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				19D1C6F827303E57000602E1 /* IDVerificationTest.swift in Sources */,
 				D0E65F8A1CCDF22D00913D9E /* BitWiseOperationsTest.swift in Sources */,
 				19D1C6F627303DA2000602E1 /* IDCodeVerification.swift in Sources */,
+				1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */,
 				D09BDA9B1CA1999B003C441B /* CardTests.swift in Sources */,
 				19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */,
 				D0E65F931CCF585E00913D9E /* LinkedListTests.swift in Sources */,
