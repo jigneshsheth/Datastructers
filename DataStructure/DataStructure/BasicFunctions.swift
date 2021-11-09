@@ -65,14 +65,14 @@ func reverseNumber(_ input:inout Int) {
  
  - returns: reverse number
  */
-func reverseNum(_ number:Int) -> Int {
-  var number = number
-  var result = 0
-  while number > 0 {
-    result = (result * 10 ) + number % 10
-    number = number / 10
-  }
-  return result
+func reverseNum(_ num:Int) -> Int {
+	var number = abs(num)
+	var result = 0
+	while number > 0 {
+		result = (result * 10 ) + number % 10
+		number = number / 10
+	}
+	return result > Int32.max ? 0 : (num > 0 ? result : (result * -1))
 }
 
 /**

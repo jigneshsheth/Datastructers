@@ -35,12 +35,16 @@ class DataStructureTests: XCTestCase {
     input = 0987654432
     reverseNumber(&input)
     XCTAssertEqual(input,234456789)
-  }
+		
+		
+
+	}
   
   func testReverseNumber1(){
     XCTAssertEqual(reverseNum(1234),4321)
     XCTAssertEqual(reverseNum(123456789),987654321)
     XCTAssertEqual(reverseNum(123400),004321)
+		XCTAssertEqual(reverseNum(1534236469),0)
   }
   
   

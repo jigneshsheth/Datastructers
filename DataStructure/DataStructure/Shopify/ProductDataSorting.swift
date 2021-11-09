@@ -22,8 +22,13 @@ struct Product:Hashable,Comparable {
 		hasher.combine(review)
 		hasher.combine(price)
 	}
+	
+	
 	static func < (lhs: Product, rhs: Product) -> Bool {
-		return lhs.review < rhs.review
+		if lhs.review == rhs.review {
+			return lhs.price < rhs.price
+		}
+		return lhs.review > rhs.review
 	}
 
 }
