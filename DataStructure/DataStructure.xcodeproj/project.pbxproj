@@ -13,6 +13,10 @@
 		1902E867273A46BA00808B0B /* ZigzagConversionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E866273A46BA00808B0B /* ZigzagConversionTest.swift */; };
 		1902E869273A53D400808B0B /* Palindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E868273A53D400808B0B /* Palindrome.swift */; };
 		1902E86B273A541600808B0B /* PalindromeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E86A273A541600808B0B /* PalindromeTest.swift */; };
+		1902E86E273A5C5D00808B0B /* UniqueEmailAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E86D273A5C5D00808B0B /* UniqueEmailAddresses.swift */; };
+		1902E871273A5C9800808B0B /* UniqueEmailAddressesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E870273A5C9800808B0B /* UniqueEmailAddressesTest.swift */; };
+		1902E873273A669E00808B0B /* LicenseKeyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E872273A669E00808B0B /* LicenseKeyFormatting.swift */; };
+		1902E875273A66D000808B0B /* LicenseKeyFormattingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E874273A66D000808B0B /* LicenseKeyFormattingTest.swift */; };
 		19B73085272F89CC009E6C1C /* Spacecraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73084272F89CC009E6C1C /* Spacecraft.swift */; };
 		19B73088272F8F26009E6C1C /* SpacecraftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B73087272F8F26009E6C1C /* SpacecraftTest.swift */; };
 		19D1C6F527303DA2000602E1 /* IDCodeVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C6F427303DA2000602E1 /* IDCodeVerification.swift */; };
@@ -75,6 +79,10 @@
 		1902E866273A46BA00808B0B /* ZigzagConversionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZigzagConversionTest.swift; path = Strings/ZigzagConversionTest.swift; sourceTree = "<group>"; };
 		1902E868273A53D400808B0B /* Palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palindrome.swift; sourceTree = "<group>"; };
 		1902E86A273A541600808B0B /* PalindromeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PalindromeTest.swift; path = Strings/PalindromeTest.swift; sourceTree = "<group>"; };
+		1902E86D273A5C5D00808B0B /* UniqueEmailAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueEmailAddresses.swift; sourceTree = "<group>"; };
+		1902E870273A5C9800808B0B /* UniqueEmailAddressesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueEmailAddressesTest.swift; sourceTree = "<group>"; };
+		1902E872273A669E00808B0B /* LicenseKeyFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseKeyFormatting.swift; sourceTree = "<group>"; };
+		1902E874273A66D000808B0B /* LicenseKeyFormattingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseKeyFormattingTest.swift; sourceTree = "<group>"; };
 		19B73084272F89CC009E6C1C /* Spacecraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacecraft.swift; sourceTree = "<group>"; };
 		19B73087272F8F26009E6C1C /* SpacecraftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacecraftTest.swift; sourceTree = "<group>"; };
 		19D1C6F427303DA2000602E1 /* IDCodeVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCodeVerification.swift; sourceTree = "<group>"; };
@@ -141,6 +149,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1902E86C273A5C3E00808B0B /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				1902E86D273A5C5D00808B0B /* UniqueEmailAddresses.swift */,
+				1902E872273A669E00808B0B /* LicenseKeyFormatting.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		1902E86F273A5C8400808B0B /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				1902E870273A5C9800808B0B /* UniqueEmailAddressesTest.swift */,
+				1902E874273A66D000808B0B /* LicenseKeyFormattingTest.swift */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
 		19B73081272F894F009E6C1C /* Shopify */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +219,7 @@
 		D00E797E1C99C3250055C862 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				1902E86C273A5C3E00808B0B /* Google */,
 				19B73081272F894F009E6C1C /* Shopify */,
 				D0E65F851CCDF10C00913D9E /* BitWise */,
 				D0E65F7D1CCDD6A100913D9E /* TicTacToe */,
@@ -216,6 +243,7 @@
 		D00E798A1C99C3250055C862 /* DataStructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				1902E86F273A5C8400808B0B /* Google */,
 				19D1C6FB2731A61E000602E1 /* Array */,
 				19B73086272F8F0D009E6C1C /* Shopify */,
 				D0E65F911CCF584700913D9E /* LinkedList */,
@@ -467,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1902E86E273A5C5D00808B0B /* UniqueEmailAddresses.swift in Sources */,
 				D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */,
 				1902E869273A53D400808B0B /* Palindrome.swift in Sources */,
 				D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */,
@@ -496,6 +525,7 @@
 				D0E65F841CCDDED000913D9E /* ReflectedStringConvertible.swift in Sources */,
 				D00E79991C99C57B0055C862 /* Factorial.swift in Sources */,
 				1902E865273A443A00808B0B /* ZigzagConversion.swift in Sources */,
+				1902E873273A669E00808B0B /* LicenseKeyFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +541,7 @@
 				D04BABE41CAC14110085EB59 /* RetailMeNotTests.swift in Sources */,
 				19D1C7052731E510000602E1 /* LongestSubstringTest.swift in Sources */,
 				D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */,
+				1902E871273A5C9800808B0B /* UniqueEmailAddressesTest.swift in Sources */,
 				D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */,
 				19D1C6F827303E57000602E1 /* IDVerificationTest.swift in Sources */,
 				D0E65F8A1CCDF22D00913D9E /* BitWiseOperationsTest.swift in Sources */,
@@ -518,6 +549,7 @@
 				1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */,
 				D09BDA9B1CA1999B003C441B /* CardTests.swift in Sources */,
 				19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */,
+				1902E875273A66D000808B0B /* LicenseKeyFormattingTest.swift in Sources */,
 				D0E65F931CCF585E00913D9E /* LinkedListTests.swift in Sources */,
 				19D1C7012731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift in Sources */,
 				D00FDAA51CBCB149008E128C /* ArrayOperationsTest.swift in Sources */,
