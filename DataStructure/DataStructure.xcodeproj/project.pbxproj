@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19018A772740565300113A8A /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A762740565300113A8A /* QueueTest.swift */; };
+		19018A792740613700113A8A /* BoardGameManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A782740613700113A8A /* BoardGameManagerTest.swift */; };
 		1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E7F72733B52700808B0B /* ProductSortingTest.swift */; };
 		1902E863273454EB00808B0B /* ProductRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E862273454EB00808B0B /* ProductRating.swift */; };
 		1902E865273A443A00808B0B /* ZigzagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E864273A443A00808B0B /* ZigzagConversion.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		19018A762740565300113A8A /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueTest.swift; path = Queue/QueueTest.swift; sourceTree = "<group>"; };
+		19018A782740613700113A8A /* BoardGameManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardGameManagerTest.swift; path = Queue/BoardGameManagerTest.swift; sourceTree = "<group>"; };
 		1902E7F72733B52700808B0B /* ProductSortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSortingTest.swift; sourceTree = "<group>"; };
 		1902E862273454EB00808B0B /* ProductRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRating.swift; sourceTree = "<group>"; };
 		1902E864273A443A00808B0B /* ZigzagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigzagConversion.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				19018A762740565300113A8A /* QueueTest.swift */,
+				19018A782740613700113A8A /* BoardGameManagerTest.swift */,
 			);
 			name = Queue;
 			sourceTree = "<group>";
@@ -584,6 +587,7 @@
 			files = (
 				1902E867273A46BA00808B0B /* ZigzagConversionTest.swift in Sources */,
 				D0E65F821CCDDE4300913D9E /* TicTacToeTest.swift in Sources */,
+				19018A792740613700113A8A /* BoardGameManagerTest.swift in Sources */,
 				19B73088272F8F26009E6C1C /* SpacecraftTest.swift in Sources */,
 				19D1C6FD2731A634000602E1 /* TwoSumTest.swift in Sources */,
 				1902E86B273A541600808B0B /* PalindromeTest.swift in Sources */,
