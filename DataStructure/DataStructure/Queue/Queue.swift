@@ -19,6 +19,7 @@ protocol Queue {
 	
 }
 
+//MARK: - Array Implementation
 // Implementation with Array
 
 struct QueueArray<T>: Queue {
@@ -45,3 +46,36 @@ struct QueueArray<T>: Queue {
 	
 }
 
+
+//MARK: - Stack implementation, using 2 stacks
+
+struct QueueStack<T:Equatable>:Queue {
+	
+	private var enqueueStack = Stack<T>()
+	private var dequeueStack = Stack<T>()
+
+	var isEmpty: Bool {
+		return enqueueStack.isEmpty && dequeueStack.isEmpty
+	}
+	
+	
+	var peek: T? {
+		return !dequeueStack.isEmpty ? dequeueStack.peek() : enqueueStack.first
+	}
+
+	mutating func enqueue(_ element: T) {
+		enqueueStack.push(element)
+	}
+	
+	mutating func dequeue() -> T? {
+		if dequeueStack.isEmpty {
+			while !enqueueStack.isEmpty, let element = enqueueStack.pop()  {
+				dequeueStack.push(element)
+			}
+		}
+		return dequeueStack.pop()
+	}
+	
+	
+
+}

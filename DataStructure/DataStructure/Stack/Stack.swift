@@ -17,6 +17,10 @@ struct Stack<Element:Equatable>:Equatable {
 		return peek() == nil
 	}
 	
+	var first:Element? {
+		return storage.first
+	}
+	
 	init(){}
 	
 	init(_ elemenets:[Element]) {
@@ -35,6 +39,7 @@ struct Stack<Element:Equatable>:Equatable {
 	func peek() -> Element? {
 		return storage.last
 	}
+	
 	
 	
 	

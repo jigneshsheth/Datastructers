@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19018A772740565300113A8A /* QueueArrayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A762740565300113A8A /* QueueArrayTest.swift */; };
+		19018A772740565300113A8A /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A762740565300113A8A /* QueueTest.swift */; };
 		1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E7F72733B52700808B0B /* ProductSortingTest.swift */; };
 		1902E863273454EB00808B0B /* ProductRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E862273454EB00808B0B /* ProductRating.swift */; };
 		1902E865273A443A00808B0B /* ZigzagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E864273A443A00808B0B /* ZigzagConversion.swift */; };
@@ -78,7 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19018A762740565300113A8A /* QueueArrayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueArrayTest.swift; path = Queue/QueueArrayTest.swift; sourceTree = "<group>"; };
+		19018A762740565300113A8A /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueTest.swift; path = Queue/QueueTest.swift; sourceTree = "<group>"; };
 		1902E7F72733B52700808B0B /* ProductSortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSortingTest.swift; sourceTree = "<group>"; };
 		1902E862273454EB00808B0B /* ProductRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRating.swift; sourceTree = "<group>"; };
 		1902E864273A443A00808B0B /* ZigzagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigzagConversion.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		19018A752740562600113A8A /* Queue */ = {
 			isa = PBXGroup;
 			children = (
-				19018A762740565300113A8A /* QueueArrayTest.swift */,
+				19018A762740565300113A8A /* QueueTest.swift */,
 			);
 			name = Queue;
 			sourceTree = "<group>";
@@ -602,7 +602,7 @@
 				19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */,
 				1902E875273A66D000808B0B /* LicenseKeyFormattingTest.swift in Sources */,
 				D0E65F931CCF585E00913D9E /* LinkedListTests.swift in Sources */,
-				19018A772740565300113A8A /* QueueArrayTest.swift in Sources */,
+				19018A772740565300113A8A /* QueueTest.swift in Sources */,
 				19D1C7012731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift in Sources */,
 				D00FDAA51CBCB149008E128C /* ArrayOperationsTest.swift in Sources */,
 			);
