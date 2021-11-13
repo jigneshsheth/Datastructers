@@ -44,6 +44,6 @@ class StackTest: XCTestCase {
 	}
 	
 	func test_initArrayLiteral() throws {
-		XCTAssertEqual(["Jigs","Kavita","Arya","Vraj"], Stack(["Jigs","Kavita","Arya","Vraj"]))
+		XCTAssertEqual(["Tesla","BMW","Nissan","Merci"], Stack(["Tesla","BMW","Nissan","Merci"]))
 	}
 }
