@@ -122,6 +122,21 @@ class SortingAlgorithmsTest: XCTestCase {
 		XCTAssertEqual([2,4,25,45,65], array2, "BubleSort failed \(#function)")
 
 	}
+	
+	func test_SelectionSort() throws{
+		var array = [25,17,31,13,2]
+		SortingAlgorithms().selectionSort(&array)
+		XCTAssertEqual([2, 13, 17, 25, 31], array, "selectionSort failed \(#function)")
+		
+		var array1 = [25]
+		SortingAlgorithms().selectionSort(&array1)
+		XCTAssertEqual([25], array1, "selectionSort failed \(#function)")
+
+		var array2 = [25,45,2,4,65]
+		SortingAlgorithms().selectionSort(&array2)
+		XCTAssertEqual([2,4,25,45,65], array2, "selectionSort failed \(#function)")
+
+	}
   
   
   func testInsertionSort(){

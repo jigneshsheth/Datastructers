@@ -103,18 +103,16 @@ extension SortingAlgorithms {
 			return
 		}
 
-		for end in (0..<array.count).reversed() {
-			var swap = false
-			for i in 0..<end {
-				if array[i] > array[i+1] {
-					array.swapAt(i, i+1)
-					swap = true
+		for current in 0..<(array.count - 1) {
+			var lowest = current
+			
+			for other in (current + 1) ..< array.count {
+				if array[lowest] > array[other] {
+					lowest = other
 				}
 			}
-			
-			// if there is swap happened in this pass then can exit early since the array is already sorted.
-			if !swap {
-				return
+			if lowest != current {
+				array.swapAt(lowest, current)
 			}
 		}
 		
