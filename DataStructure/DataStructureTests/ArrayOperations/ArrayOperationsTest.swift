@@ -1,5 +1,5 @@
 //
-//  ArrayOperationsTest.swift
+//  SortingAlogrithmsTest.swift
 //  DataStructure
 //
 //  Created by Jigs Sheth on 4/11/16.
@@ -9,12 +9,12 @@
 import XCTest
 @testable import DataStructure
 
-class ArrayOperationsTest: XCTestCase {
+class SortingAlgorithmsTest: XCTestCase {
   
-  var operations:ArrayOperations?
+  var operations:SortingAlgorithms?
   override func setUp() {
     super.setUp()
-    operations = ArrayOperations()
+    operations = SortingAlgorithms()
   }
   
   override func tearDown() {
@@ -96,21 +96,21 @@ class ArrayOperationsTest: XCTestCase {
   
   
   func testSelectionSort(){
-    let array = ArrayOperations(input: [25,17,31,13,2])
+    let array = SortingAlgorithms(input: [25,17,31,13,2])
     array.selectionSort()
     XCTAssertEqual([2, 13, 17, 25, 31], array.arrayOutput, "Selection sort failed \(#function)")
   }
   
   
   func testBubleSort(){
-    let array = ArrayOperations(input: [25,17,31,13,2])
+    let array = SortingAlgorithms(input: [25,17,31,13,2])
     array.bubleSort()
     XCTAssertEqual([2, 13, 17, 25, 31], array.arrayOutput, "BubleSort failed \(#function)")
   }
   
   
   func testInsertionSort(){
-    let array = ArrayOperations(input: [25,17,31,13,2])
+    let array = SortingAlgorithms(input: [25,17,31,13,2])
     array.insertionSort()
     XCTAssertEqual([2, 13, 17, 25, 31], array.arrayOutput, "BubleSort failed \(#function)")
   }

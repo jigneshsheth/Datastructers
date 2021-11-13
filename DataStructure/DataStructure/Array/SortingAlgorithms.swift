@@ -10,7 +10,7 @@ import Foundation
 
 
 
-public class ArrayOperations {
+public class SortingAlgorithms {
   
   //  static let max = 5
   
@@ -72,20 +72,8 @@ public class ArrayOperations {
 }
 
 
-// MARK: - Stack Implementation
-extension ArrayOperations {
-  
-}
-
-
-
-// MARK: - Search Implementation
-extension ArrayOperations {
-  
-}
-
 // MARK: - Sort Implementation
-extension ArrayOperations {
+extension SortingAlgorithms {
   
   //every iteration you will get smallest number at begining and start arranging the asceding array
   public func selectionSort(){
@@ -107,6 +95,7 @@ extension ArrayOperations {
   
   
   //every iteration you will get largest number at the end and start arranging the decending array
+	//Time complexicity : O(n2) in worst case:
   public func bubleSort(){
     logFunctionTitle()
     
@@ -158,7 +147,7 @@ extension ArrayOperations {
 
 
 // MARK: - Merge 2 sorted Array
-extension ArrayOperations {
+extension SortingAlgorithms {
   
   
   public func mergeSortedArrays(a:[Int],b:[Int]){
