@@ -104,7 +104,7 @@ class SortingAlgorithmsTest: XCTestCase {
   
   func testBubleSort(){
     let array = SortingAlgorithms(input: [25,17,31,13,2])
-    array.bubleSort()
+    array.bubbleSort()
     XCTAssertEqual([2, 13, 17, 25, 31], array.arrayOutput, "BubleSort failed \(#function)")
   }
 	
@@ -135,6 +135,22 @@ class SortingAlgorithmsTest: XCTestCase {
 		var array2 = [25,45,2,4,65]
 		SortingAlgorithms().selectionSort(&array2)
 		XCTAssertEqual([2,4,25,45,65], array2, "selectionSort failed \(#function)")
+
+	}
+	
+	
+	func test_InsertionSort() throws{
+		var array = [25,17,31,13,2]
+		SortingAlgorithms().insertionSort(&array)
+		XCTAssertEqual([2, 13, 17, 25, 31], array, "insertionSort failed \(#function)")
+		
+		var array1 = [25]
+		SortingAlgorithms().insertionSort(&array1)
+		XCTAssertEqual([25], array1, "insertionSort failed \(#function)")
+
+		var array2 = [25,45,2,4,65]
+		SortingAlgorithms().insertionSort(&array2)
+		XCTAssertEqual([2,4,25,45,65], array2, "insertionSort failed \(#function)")
 
 	}
   

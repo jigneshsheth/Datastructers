@@ -96,9 +96,8 @@ extension SortingAlgorithms {
 		//  MARK:Selection Sort
 	
 		/// Selection Sort
+		/// finding the lowest value first
 	public func selectionSort<T:Comparable>(_ array:inout [T]){
-		logFunctionTitle()
-
 		guard array.count > 2 else {
 			return
 		}
@@ -115,9 +114,9 @@ extension SortingAlgorithms {
 				array.swapAt(lowest, current)
 			}
 		}
-		
-		logFunctionEnd()
 	}
+	
+	
 		//  MARK:Bubble Sort
 	
 		/// Bubble Sort
@@ -145,10 +144,30 @@ extension SortingAlgorithms {
 		
 		logFunctionEnd()
 	}
+
+	//  MARK: InsertionSort
+	//https://www.raywenderlich.com/977854-data-structures-algorithms-in-swift/lessons/7
+	public func insertionSort<T:Comparable>(_ array:inout [T]){
+		guard array.count > 2 else {
+			return
+		}
+
+		for current in 1..<array.count {
+			for shifting in (1 ... current).reversed() {
+				if array[shifting] < array[shifting - 1] {
+					array.swapAt(shifting, shifting - 1)
+				} else {
+					break
+				}
+			}
+		}
+	}
+	
+	
 	
 		//every iteration you will get largest number at the end and start arranging the decending array
 		//Time complexicity : O(n2) in worst case:
-	public func bubleSort(){
+	public func bubbleSort(){
 		logFunctionTitle()
 		
 		for i in 0..<arr.count {
