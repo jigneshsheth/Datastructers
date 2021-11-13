@@ -43,7 +43,7 @@
 		D00E79991C99C57B0055C862 /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E79981C99C57B0055C862 /* Factorial.swift */; };
 		D00E799B1C9BF27C0055C862 /* BasicFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */; };
 		D00FDAA31CBCAAB7008E128C /* SortingAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FDAA21CBCAAB7008E128C /* SortingAlgorithms.swift */; };
-		D00FDAA51CBCB149008E128C /* ArrayOperationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FDAA41CBCB149008E128C /* ArrayOperationsTest.swift */; };
+		D00FDAA51CBCB149008E128C /* SortingAlgorithmsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FDAA41CBCB149008E128C /* SortingAlgorithmsTest.swift */; };
 		D04BABE21CAC12790085EB59 /* FreeShippingThresold.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BABE11CAC12790085EB59 /* FreeShippingThresold.swift */; };
 		D04BABE41CAC14110085EB59 /* RetailMeNotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BABE31CAC14110085EB59 /* RetailMeNotTests.swift */; };
 		D09BDA991CA0CC9D003C441B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BDA981CA0CC9D003C441B /* Card.swift */; };
@@ -117,7 +117,7 @@
 		D00E79981C99C57B0055C862 /* Factorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		D00E799A1C9BF27C0055C862 /* BasicFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicFunctions.swift; sourceTree = "<group>"; };
 		D00FDAA21CBCAAB7008E128C /* SortingAlgorithms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortingAlgorithms.swift; path = Array/SortingAlgorithms.swift; sourceTree = "<group>"; };
-		D00FDAA41CBCB149008E128C /* ArrayOperationsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayOperationsTest.swift; path = ArrayOperations/ArrayOperationsTest.swift; sourceTree = "<group>"; };
+		D00FDAA41CBCB149008E128C /* SortingAlgorithmsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SortingAlgorithmsTest.swift; path = ArrayOperations/SortingAlgorithmsTest.swift; sourceTree = "<group>"; };
 		D04BABE11CAC12790085EB59 /* FreeShippingThresold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FreeShippingThresold.swift; path = RetailMeNot/FreeShippingThresold.swift; sourceTree = "<group>"; };
 		D04BABE31CAC14110085EB59 /* RetailMeNotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RetailMeNotTests.swift; path = RetailMeNot/RetailMeNotTests.swift; sourceTree = "<group>"; };
 		D09BDA981CA0CC9D003C441B /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Cards/Card.swift; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 				D00E798D1C99C3250055C862 /* Info.plist */,
 				D09BDA9A1CA1999B003C441B /* CardTests.swift */,
 				D04BABE31CAC14110085EB59 /* RetailMeNotTests.swift */,
-				D00FDAA41CBCB149008E128C /* ArrayOperationsTest.swift */,
+				D00FDAA41CBCB149008E128C /* SortingAlgorithmsTest.swift */,
 			);
 			path = DataStructureTests;
 			sourceTree = "<group>";
@@ -608,7 +608,7 @@
 				D0E65F931CCF585E00913D9E /* LinkedListTests.swift in Sources */,
 				19018A772740565300113A8A /* QueueTest.swift in Sources */,
 				19D1C7012731AD8F000602E1 /* AddTwoNumber_LinkedList_Test.swift in Sources */,
-				D00FDAA51CBCB149008E128C /* ArrayOperationsTest.swift in Sources */,
+				D00FDAA51CBCB149008E128C /* SortingAlgorithmsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
