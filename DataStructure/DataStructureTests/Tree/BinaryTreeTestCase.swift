@@ -9,15 +9,17 @@
 import XCTest
 @testable import DataStructure
 
+	//https://www.raywenderlich.com/977854-data-structures-algorithms-in-swift/lessons/12
+
 class BinaryTreeTestCase: XCTestCase {
 	
-//	 ┌──9
-//	┌──8
-// │ └──7
-// 6
-// │ ┌──3
-// └──1
-//	└──0
+		//	 ┌──9
+		//	┌──8
+		// │ └──7
+		// 6
+		// │ ┌──3
+		// └──1
+		//	└──0
 	var binaryTree:BinaryNode<Int> = {
 		let zero = BinaryNode(0)
 		let seven = BinaryNode(7)
@@ -62,7 +64,10 @@ class BinaryTreeTestCase: XCTestCase {
 	func test_serialization() throws {
 		let expectedResult = [6,1,0,nil,nil,3,nil,nil,8,7,nil,nil,9,nil,nil]
 		let result = BinaryNode<Int>.serializeTree(binaryTree)
-		XCTAssertEqual(expectedResult,result )
+		XCTAssertEqual(expectedResult,result)
+		
+		let deserializedArray = BinaryNode<Int>.deserialize(result)
+		XCTAssertEqual(deserializedArray?.description, binaryTree.description)
 	}
 	
 	

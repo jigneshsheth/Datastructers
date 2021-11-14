@@ -49,7 +49,7 @@ extension BinaryNode {
 		leftChild?.traversalPreOrder(visit: visit)
 		rightChild?.traversalPreOrder(visit: visit)
 	}
-
+	
 	
 	func traversalPostOrder(visit: (Element) -> Void  ){
 		leftChild?.traversalPostOrder(visit: visit)
@@ -62,10 +62,27 @@ extension BinaryNode {
 
 
 extension BinaryNode {
+	
 	static func serializeTree<T>(_ node:BinaryNode<T>) -> [T?] {
 		var array:[T?] = []
 		node.traversalPreOrder_serialization{array.append($0)}
 		return array
+	}
+	
+	static func deserializeTree<T>(_ array: inout [T?]) -> BinaryNode<T>? {
+		guard let val = array.removeLast() else {
+			return nil
+		}
+		
+		let node = BinaryNode<T>(val)
+		node.leftChild = deserializeTree(&array)
+		node.rightChild = deserializeTree(&array)
+		return node
+	}
+	
+	static	func deserialize<T>(_ array:[T?]) -> BinaryNode<T>? {
+		var arr = Array(array.reversed())
+		return deserializeTree(&arr)
 	}
 }
 
