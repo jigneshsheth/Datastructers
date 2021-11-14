@@ -11,7 +11,13 @@ import XCTest
 
 class BinaryTreeTestCase: XCTestCase {
 	
-	
+//	 ┌──9
+//	┌──8
+// │ └──7
+// 6
+// │ ┌──3
+// └──1
+//	└──0
 	var binaryTree:BinaryNode<Int> = {
 		let zero = BinaryNode(0)
 		let seven = BinaryNode(7)
@@ -31,10 +37,6 @@ class BinaryTreeTestCase: XCTestCase {
 		return six
 	}()
 	
-	override func setUpWithError() throws {
-	}
-	
-	
 	func test_visualTree() throws {
 		print(binaryTree.description)
 	}
@@ -46,7 +48,7 @@ class BinaryTreeTestCase: XCTestCase {
 	}
 	
 	func test_traversalPreOrder() throws {
-		var testArray:[Int] = []
+		var testArray:[Int?] = []
 		binaryTree.traversalPreOrder{testArray.append($0)}
 		XCTAssertEqual(testArray, [6,1,0,3,8,7,9])
 	}
@@ -56,5 +58,13 @@ class BinaryTreeTestCase: XCTestCase {
 		binaryTree.traversalPostOrder{testArray.append($0)}
 		XCTAssertEqual(testArray, [0,3,1,7,9,8,6])
 	}
+	
+	func test_serialization() throws {
+		let expectedResult = [6,1,0,nil,nil,3,nil,nil,8,7,nil,nil,9,nil,nil]
+		let result = BinaryNode<Int>.serializeTree(binaryTree)
+		XCTAssertEqual(expectedResult,result )
+	}
+	
+	
 	
 }

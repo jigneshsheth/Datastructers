@@ -31,11 +31,25 @@ extension BinaryNode {
 		rightChild?.traversalInOrder(visit: visit)
 	}
 	
+	func traversalPreOrder_serialization(visit: (Element?) -> Void  ){
+		visit(value)
+		if let leftChild = leftChild {
+			leftChild.traversalPreOrder_serialization(visit: visit)
+		}else {
+			visit(nil)
+		}
+		if let rightChild = rightChild {
+			rightChild.traversalPreOrder_serialization(visit: visit)
+		}else {
+			visit(nil)
+		}
+	}
 	func traversalPreOrder(visit: (Element) -> Void  ){
 		visit(value)
 		leftChild?.traversalPreOrder(visit: visit)
 		rightChild?.traversalPreOrder(visit: visit)
 	}
+
 	
 	func traversalPostOrder(visit: (Element) -> Void  ){
 		leftChild?.traversalPostOrder(visit: visit)
@@ -44,6 +58,18 @@ extension BinaryNode {
 	}
 	
 }
+
+
+
+extension BinaryNode {
+	static func serializeTree<T>(_ node:BinaryNode<T>) -> [T?] {
+		var array:[T?] = []
+		node.traversalPreOrder_serialization{array.append($0)}
+		return array
+	}
+}
+
+
 
 
 
