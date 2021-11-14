@@ -39,6 +39,22 @@ class BinaryTreeTestCase: XCTestCase {
 		print(binaryTree.description)
 	}
 	
+	func test_traversalInOrder() throws {
+		var testArray:[Int] = []
+		binaryTree.traversalInOrder{testArray.append($0)}
+		XCTAssertEqual(testArray, [0,1,3,6,7,8,9])
+	}
 	
+	func test_traversalPreOrder() throws {
+		var testArray:[Int] = []
+		binaryTree.traversalPreOrder{testArray.append($0)}
+		XCTAssertEqual(testArray, [6,1,0,3,8,7,9])
+	}
+	
+	func test_traversalPostOrder() throws {
+		var testArray:[Int] = []
+		binaryTree.traversalPostOrder{testArray.append($0)}
+		XCTAssertEqual(testArray, [0,3,1,7,9,8,6])
+	}
 	
 }
