@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		19018A772740565300113A8A /* QueueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A762740565300113A8A /* QueueTest.swift */; };
 		19018A792740613700113A8A /* BoardGameManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A782740613700113A8A /* BoardGameManagerTest.swift */; };
+		19018A7C2740898300113A8A /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A7B2740898300113A8A /* BinaryTree.swift */; };
+		19018A7E27408A1200113A8A /* BinaryTreeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A7D27408A1200113A8A /* BinaryTreeTestCase.swift */; };
 		1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E7F72733B52700808B0B /* ProductSortingTest.swift */; };
 		1902E863273454EB00808B0B /* ProductRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E862273454EB00808B0B /* ProductRating.swift */; };
 		1902E865273A443A00808B0B /* ZigzagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E864273A443A00808B0B /* ZigzagConversion.swift */; };
@@ -81,6 +83,8 @@
 /* Begin PBXFileReference section */
 		19018A762740565300113A8A /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueTest.swift; path = Queue/QueueTest.swift; sourceTree = "<group>"; };
 		19018A782740613700113A8A /* BoardGameManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardGameManagerTest.swift; path = Queue/BoardGameManagerTest.swift; sourceTree = "<group>"; };
+		19018A7B2740898300113A8A /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		19018A7D27408A1200113A8A /* BinaryTreeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTestCase.swift; sourceTree = "<group>"; };
 		1902E7F72733B52700808B0B /* ProductSortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSortingTest.swift; sourceTree = "<group>"; };
 		1902E862273454EB00808B0B /* ProductRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRating.swift; sourceTree = "<group>"; };
 		1902E864273A443A00808B0B /* ZigzagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigzagConversion.swift; sourceTree = "<group>"; };
@@ -168,6 +172,14 @@
 				19018A782740613700113A8A /* BoardGameManagerTest.swift */,
 			);
 			name = Queue;
+			sourceTree = "<group>";
+		};
+		19018A7A2740894B00113A8A /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				19018A7D27408A1200113A8A /* BinaryTreeTestCase.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 		1902E86C273A5C3E00808B0B /* Google */ = {
@@ -291,6 +303,7 @@
 		D00E798A1C99C3250055C862 /* DataStructureTests */ = {
 			isa = PBXGroup;
 			children = (
+				19018A7A2740894B00113A8A /* Tree */,
 				19018A752740562600113A8A /* Queue */,
 				1902E879274042F400808B0B /* Stack */,
 				1902E86F273A5C8400808B0B /* Google */,
@@ -350,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D598471CA04AC400FB71FA /* BinarySearchTree.swift */,
+				19018A7B2740898300113A8A /* BinaryTree.swift */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -545,6 +559,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19018A7C2740898300113A8A /* BinaryTree.swift in Sources */,
 				1902E86E273A5C5D00808B0B /* UniqueEmailAddresses.swift in Sources */,
 				D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */,
 				1902E869273A53D400808B0B /* Palindrome.swift in Sources */,
@@ -588,6 +603,7 @@
 				1902E867273A46BA00808B0B /* ZigzagConversionTest.swift in Sources */,
 				D0E65F821CCDDE4300913D9E /* TicTacToeTest.swift in Sources */,
 				19018A792740613700113A8A /* BoardGameManagerTest.swift in Sources */,
+				19018A7E27408A1200113A8A /* BinaryTreeTestCase.swift in Sources */,
 				19B73088272F8F26009E6C1C /* SpacecraftTest.swift in Sources */,
 				19D1C6FD2731A634000602E1 /* TwoSumTest.swift in Sources */,
 				1902E86B273A541600808B0B /* PalindromeTest.swift in Sources */,
