@@ -11,6 +11,8 @@
 		19018A792740613700113A8A /* BoardGameManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A782740613700113A8A /* BoardGameManagerTest.swift */; };
 		19018A7C2740898300113A8A /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A7B2740898300113A8A /* BinaryTree.swift */; };
 		19018A7E27408A1200113A8A /* BinaryTreeTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A7D27408A1200113A8A /* BinaryTreeTestCase.swift */; };
+		19018A802749B63000113A8A /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A7F2749B63000113A8A /* BinarySearch.swift */; };
+		19018A822749B96600113A8A /* BinarySearchTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19018A812749B96600113A8A /* BinarySearchTestCase.swift */; };
 		1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E7F72733B52700808B0B /* ProductSortingTest.swift */; };
 		1902E863273454EB00808B0B /* ProductRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E862273454EB00808B0B /* ProductRating.swift */; };
 		1902E865273A443A00808B0B /* ZigzagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1902E864273A443A00808B0B /* ZigzagConversion.swift */; };
@@ -85,6 +87,8 @@
 		19018A782740613700113A8A /* BoardGameManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoardGameManagerTest.swift; path = Queue/BoardGameManagerTest.swift; sourceTree = "<group>"; };
 		19018A7B2740898300113A8A /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		19018A7D27408A1200113A8A /* BinaryTreeTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTestCase.swift; sourceTree = "<group>"; };
+		19018A7F2749B63000113A8A /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		19018A812749B96600113A8A /* BinarySearchTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTestCase.swift; sourceTree = "<group>"; };
 		1902E7F72733B52700808B0B /* ProductSortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSortingTest.swift; sourceTree = "<group>"; };
 		1902E862273454EB00808B0B /* ProductRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRating.swift; sourceTree = "<group>"; };
 		1902E864273A443A00808B0B /* ZigzagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigzagConversion.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				19018A7D27408A1200113A8A /* BinaryTreeTestCase.swift */,
+				19018A812749B96600113A8A /* BinarySearchTestCase.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 			children = (
 				D0D598471CA04AC400FB71FA /* BinarySearchTree.swift */,
 				19018A7B2740898300113A8A /* BinaryTree.swift */,
+				19018A7F2749B63000113A8A /* BinarySearch.swift */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 				1902E86E273A5C5D00808B0B /* UniqueEmailAddresses.swift in Sources */,
 				D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */,
 				1902E869273A53D400808B0B /* Palindrome.swift in Sources */,
+				19018A802749B63000113A8A /* BinarySearch.swift in Sources */,
 				D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */,
 				D04BABE21CAC12790085EB59 /* FreeShippingThresold.swift in Sources */,
 				D0D598481CA04AC400FB71FA /* BinarySearchTree.swift in Sources */,
@@ -618,6 +625,7 @@
 				19D1C6F627303DA2000602E1 /* IDCodeVerification.swift in Sources */,
 				1902E7F82733B52700808B0B /* ProductSortingTest.swift in Sources */,
 				1902E87B2740430700808B0B /* StackTest.swift in Sources */,
+				19018A822749B96600113A8A /* BinarySearchTestCase.swift in Sources */,
 				D09BDA9B1CA1999B003C441B /* CardTests.swift in Sources */,
 				19D1C7092731EF1B000602E1 /* FindMedianSortedArrayTest.swift in Sources */,
 				1902E875273A66D000808B0B /* LicenseKeyFormattingTest.swift in Sources */,

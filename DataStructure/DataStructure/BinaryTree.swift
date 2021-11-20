@@ -63,6 +63,8 @@ extension BinaryNode {
 
 extension BinaryNode {
 	
+		/// Serialize Tree
+		/// - Returns: <#description#>
 	static func serializeTree<T>(_ node:BinaryNode<T>) -> [T?] {
 		var array:[T?] = []
 		node.traversalPreOrder_serialization{array.append($0)}
@@ -85,8 +87,6 @@ extension BinaryNode {
 		return deserializeTree(&arr)
 	}
 }
-
-
 
 
 
