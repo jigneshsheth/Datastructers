@@ -43,6 +43,8 @@
 		19D1C70B2732FDBF000602E1 /* ProductDataSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1C70A2732FDBF000602E1 /* ProductDataSorting.swift */; };
 		19D233BD277C9EA900CEF446 /* PackageMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D233BC277C9EA900CEF446 /* PackageMatching.swift */; };
 		19D233BF277C9ED900CEF446 /* PackageMatchingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D233BE277C9ED900CEF446 /* PackageMatchingTest.swift */; };
+		19D233C1277D182C00CEF446 /* CartDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D233C0277D182C00CEF446 /* CartDiscount.swift */; };
+		19D233C3277D1AE100CEF446 /* CartDiscountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D233C2277D1AE100CEF446 /* CartDiscountTest.swift */; };
 		D00E79801C99C3250055C862 /* DataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = D00E797F1C99C3250055C862 /* DataStructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00E79871C99C3250055C862 /* DataStructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00E797C1C99C3250055C862 /* DataStructure.framework */; };
 		D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E798B1C99C3250055C862 /* DataStructureTests.swift */; };
@@ -120,6 +122,8 @@
 		19D1C70A2732FDBF000602E1 /* ProductDataSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataSorting.swift; sourceTree = "<group>"; };
 		19D233BC277C9EA900CEF446 /* PackageMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageMatching.swift; sourceTree = "<group>"; };
 		19D233BE277C9ED900CEF446 /* PackageMatchingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageMatchingTest.swift; sourceTree = "<group>"; };
+		19D233C0277D182C00CEF446 /* CartDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDiscount.swift; sourceTree = "<group>"; };
+		19D233C2277D1AE100CEF446 /* CartDiscountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDiscountTest.swift; sourceTree = "<group>"; };
 		D00E797C1C99C3250055C862 /* DataStructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00E797F1C99C3250055C862 /* DataStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
 		D00E79811C99C3250055C862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 				19D1C70A2732FDBF000602E1 /* ProductDataSorting.swift */,
 				1902E862273454EB00808B0B /* ProductRating.swift */,
 				19D233BC277C9EA900CEF446 /* PackageMatching.swift */,
+				19D233C0277D182C00CEF446 /* CartDiscount.swift */,
 			);
 			path = Shopify;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				19D1C6F727303E57000602E1 /* IDVerificationTest.swift */,
 				1902E7F72733B52700808B0B /* ProductSortingTest.swift */,
 				19D233BE277C9ED900CEF446 /* PackageMatchingTest.swift */,
+				19D233C2277D1AE100CEF446 /* CartDiscountTest.swift */,
 			);
 			path = Shopify;
 			sourceTree = "<group>";
@@ -575,6 +581,7 @@
 				1902E86E273A5C5D00808B0B /* UniqueEmailAddresses.swift in Sources */,
 				D0FEE1661CC8E9A300DA2D76 /* LRUCache.swift in Sources */,
 				1902E869273A53D400808B0B /* Palindrome.swift in Sources */,
+				19D233C1277D182C00CEF446 /* CartDiscount.swift in Sources */,
 				19018A802749B63000113A8A /* BinarySearch.swift in Sources */,
 				D0FEE1601CC8741B00DA2D76 /* Fibonacci.swift in Sources */,
 				D04BABE21CAC12790085EB59 /* FreeShippingThresold.swift in Sources */,
@@ -626,6 +633,7 @@
 				D0E65F7C1CCDD21F00913D9E /* StringTests.swift in Sources */,
 				1902E87D27404BFC00808B0B /* StackChallengeTestCase.swift in Sources */,
 				19D233BF277C9ED900CEF446 /* PackageMatchingTest.swift in Sources */,
+				19D233C3277D1AE100CEF446 /* CartDiscountTest.swift in Sources */,
 				1902E871273A5C9800808B0B /* UniqueEmailAddressesTest.swift in Sources */,
 				D00E798C1C99C3250055C862 /* DataStructureTests.swift in Sources */,
 				19D1C6F827303E57000602E1 /* IDVerificationTest.swift in Sources */,
