@@ -9,11 +9,11 @@
 import XCTest
 @testable import DataStructure
 
-class CartDiscountTest: XCTestCase {
+class CartDiscountTest<T:CartItem>: XCTestCase {
 
-	var cartDiscount:CartDiscount?
+	var cartDiscount:CartDiscount<T>?
     override func setUpWithError() throws {
-			cartDiscount = CartDiscount()
+			cartDiscount = CartDiscount<T>()
 		}
 
     override func tearDownWithError() throws {

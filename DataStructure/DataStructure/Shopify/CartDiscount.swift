@@ -17,7 +17,7 @@ let apple = "Apple"
 let orange = "Orange"
 let grapes = "Grapes"
 
-protocol CartItem:CustomStringConvertible {
+protocol CartItem:CustomStringConvertible,Equatable {
 	var name:String {get}
 	var price:Int {get}
 	var qty:Int {get}
@@ -32,11 +32,6 @@ extension CartItem{
 	var description:String {
 		return name
 	}
-	
-	static func == (lhs:CartItem,rhs:CartItem) -> Bool{
-		return lhs.name == rhs.name
-	}
-	
 	func getTotalPrice() -> Double {
 		return Double(qty * price)
 	}
@@ -105,22 +100,32 @@ struct Apple:CartItem {
 }
 
 
-struct Cart {
-	var items:[CartItem]
+struct Cart<T:CartItem> {
+	
+	private(set) var items:[T] = []
+	
+	mutating func removeItem(item:T) {
+		guard let index = items.firstIndex(of:item) else {return}
+		items.remove(at: index)
+	}
+
+	mutating func addItem(item:T) {
+		items.append(item)
+	}
+
+	
 	var totalQty:Int {
 		return items.map{ $0.qty}.reduce(0,+)
 	}
+	
 	func getTotal() -> Double {
 		return items.map{ $0.getTotalPrice()}.reduce(0,+)
 	}
 	
 	func getDiscountedPrice() -> Double {
 		var totalPrice:Double = 0.0
-		print(items)
-		
 		for item in items {
 			let itemDiscount = item.getItemDiscount() * item.getTotalPrice()
-			print("item Discount \(itemDiscount) \n")
 			totalPrice = totalPrice + item.getTotalPrice() - itemDiscount
 		}
 		return totalPrice
@@ -133,33 +138,26 @@ struct Cart {
 	
 }
 
-struct CartDiscount {
+struct CartDiscount<T:CartItem> {
 	
 	
 	func getTotalCost(_cartItems:[(String,Int)]) -> Double{
 		
-		var cartItems:[CartItem] = []
+		var cart = Cart<T>()
 		for (item,qty) in _cartItems {
 			if item == apple {
-				cartItems.append(Apple(qty: qty))
+				cart.addItem(item: Apple(qty: qty) as! T)
 			}else if item == orange {
-				cartItems.append(Orange(qty: qty))
+				cart.addItem(item: Orange(qty: qty) as! T)
 			} else if item == grapes {
-				cartItems.append(Grapes(qty: qty))
+				cart.addItem(item: Grapes(qty: qty) as! T)
 			}
 		}
 		
-		print("Cart Items::\(cartItems)")
-		let cart = Cart(items: cartItems)
-		
 		print(cart.getTotal())
 		print(cart.totalQty)
-		
-		var total:Double = 0
-		
-		total = cart.getDiscountedPrice()
-		
-		return total
+	
+		return cart.getDiscountedPrice()
 	}
 	
 }
